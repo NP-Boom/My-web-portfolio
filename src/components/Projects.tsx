@@ -16,13 +16,21 @@ import {
   PortfolioArtwork
 } from '../data/portfolioAlbums';
 import { getProjectFloatStyle } from '../utils/floatAnimation';
+import {
+  PORTFOLIO_CATEGORIES,
+  PortfolioCategoryId,
+  filterPortfolioAlbums,
+  getAlbumsForCategories,
+  toggleCategoryFilter
+} from '../utils/portfolioFilters';
 
 interface ProjectsProps {
   lang: 'th' | 'en';
 }
 
 export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [activeCategories, setActiveCategories] = useState<PortfolioCategoryId[]>([]);
+  const [selectedAlbumId, setSelectedAlbumId] = useState<string>('all');
   const [activeItem, setActiveItem] = useState<PortfolioArtwork | null>(null);
   const [zoomLevel, setZoomLevel] = useState<number>(1);
   const [showProtectedNotice, setShowProtectedNotice] = useState<boolean>(false);
@@ -62,11 +70,28 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
     }
   };
 
-  // Filtered albums based on selected tab
-  const displayedAlbums =
-    selectedCategory === 'all'
-      ? PORTFOLIO_ALBUMS
-      : PORTFOLIO_ALBUMS.filter((album) => album.id === selectedCategory);
+  // Albums available within the currently toggled high-level categories
+  const categoryAlbums = getAlbumsForCategories(PORTFOLIO_ALBUMS, activeCategories);
+
+  // Filtered albums displayed on the portfolio grid
+  const displayedAlbums = filterPortfolioAlbums(
+    PORTFOLIO_ALBUMS,
+    activeCategories,
+    selectedAlbumId
+  );
+
+  const visibleItems = displayedAlbums.flatMap((album) => album.items);
+
+  const handleToggleCategory = (target: PortfolioCategoryId | 'all') => {
+    const nextCategories = toggleCategoryFilter(activeCategories, target);
+    setActiveCategories(nextCategories);
+    if (selectedAlbumId !== 'all') {
+      const nextAvailable = getAlbumsForCategories(PORTFOLIO_ALBUMS, nextCategories);
+      if (!nextAvailable.some((album) => album.id === selectedAlbumId)) {
+        setSelectedAlbumId('all');
+      }
+    }
+  };
 
   // Keyboard navigation for lightbox & Anti-Save shortcuts prevention
   useEffect(() => {
@@ -95,53 +120,116 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [activeItem, lang]);
+  }, [activeItem, lang, visibleItems]);
 
   const handleNext = () => {
     if (!activeItem) return;
-    const currentIndex = ALL_PORTFOLIO_ITEMS.findIndex((it) => it.id === activeItem.id);
-    const nextIndex = (currentIndex + 1) % ALL_PORTFOLIO_ITEMS.length;
-    setActiveItem(ALL_PORTFOLIO_ITEMS[nextIndex]);
+    const pool = visibleItems.length > 0 ? visibleItems : ALL_PORTFOLIO_ITEMS;
+    const currentIndex = pool.findIndex((it) => it.id === activeItem.id);
+    const nextIndex = currentIndex === -1 ? 0 : (currentIndex + 1) % pool.length;
+    setActiveItem(pool[nextIndex]);
     setZoomLevel(1);
   };
 
   const handlePrev = () => {
     if (!activeItem) return;
-    const currentIndex = ALL_PORTFOLIO_ITEMS.findIndex((it) => it.id === activeItem.id);
-    const prevIndex = (currentIndex - 1 + ALL_PORTFOLIO_ITEMS.length) % ALL_PORTFOLIO_ITEMS.length;
-    setActiveItem(ALL_PORTFOLIO_ITEMS[prevIndex]);
+    const pool = visibleItems.length > 0 ? visibleItems : ALL_PORTFOLIO_ITEMS;
+    const currentIndex = pool.findIndex((it) => it.id === activeItem.id);
+    const prevIndex = currentIndex === -1 ? 0 : (currentIndex - 1 + pool.length) % pool.length;
+    setActiveItem(pool[prevIndex]);
     setZoomLevel(1);
   };
 
+  const isAllActive = activeCategories.length === 0;
+
   return (
-    <section id="projects" className="py-10 sm:py-12 relative bg-[#070d18]/90">
+    <section id="projects" className="scroll-mt-20 py-10 sm:py-12 relative bg-[#070d18]/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Quick Folder Category Filter Tabs (Strictly no numeric counts) */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-6 scrollbar-none border-b border-white/10">
-          <button
-            onClick={() => setSelectedCategory('all')}
-            className={`px-4 py-2 text-xs font-semibold rounded-xl whitespace-nowrap shrink-0 transition-all cursor-pointer ${
-              selectedCategory === 'all'
-                ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/20 border border-blue-400'
-                : 'bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white border border-white/10'
-            }`}
-          >
-            {lang === 'th' ? 'ทุกโฟลเดอร์ผลงาน' : 'All Folders'}
-          </button>
-          {PORTFOLIO_ALBUMS.map((album) => (
+        {/* Primary Category Filter Bar (Multi-toggle by portfolio type, strictly no numeric counts) */}
+        <div
+          role="group"
+          aria-label={lang === 'th' ? 'กรองผลงานตามประเภท' : 'Filter portfolio by category'}
+          data-testid="category-filter-bar"
+          className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-4 border-b border-white/10"
+        >
+          <div className="flex flex-wrap items-center gap-2">
             <button
-              key={album.id}
-              onClick={() => setSelectedCategory(album.id)}
-              className={`px-4 py-2 text-xs font-semibold rounded-xl whitespace-nowrap shrink-0 transition-all cursor-pointer ${
-                selectedCategory === album.id
-                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/20 border border-blue-400'
-                  : 'bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white border border-white/10'
+              type="button"
+              onClick={() => handleToggleCategory('all')}
+              aria-pressed={isAllActive}
+              data-testid="category-filter-all"
+              className={`px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl whitespace-nowrap shrink-0 transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#070d18] ${
+                isAllActive
+                  ? 'bg-blue-600 text-white border border-[#38bdf8] shadow-[0_0_16px_rgba(29,161,255,0.4)]'
+                  : 'bg-[#0b1426]/90 hover:bg-[#11203d] text-slate-300 hover:text-white border border-white/10 hover:border-[#1da1ff]/50'
               }`}
             >
-              {lang === 'th' ? album.titleTh : album.titleEn}
+              {lang === 'th' ? 'ทั้งหมด' : 'All'}
             </button>
-          ))}
+
+            {PORTFOLIO_CATEGORIES.map((category) => {
+              const isSelected = activeCategories.includes(category.id);
+              return (
+                <button
+                  type="button"
+                  key={category.id}
+                  onClick={() => handleToggleCategory(category.id)}
+                  aria-pressed={isSelected}
+                  data-testid={`category-filter-${category.id}`}
+                  className={`px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl whitespace-nowrap shrink-0 transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#070d18] ${
+                    isSelected
+                      ? 'bg-blue-600 text-white border border-[#38bdf8] shadow-[0_0_16px_rgba(29,161,255,0.4)]'
+                      : 'bg-[#0b1426]/90 hover:bg-[#11203d] text-slate-300 hover:text-white border border-white/10 hover:border-[#1da1ff]/50'
+                  }`}
+                >
+                  {lang === 'th' ? category.labelTh : category.labelEn}
+                </button>
+              );
+            })}
+          </div>
+
+          <p className="text-xs text-slate-400 whitespace-nowrap shrink-0">
+            {lang === 'th'
+              ? 'เลือกเปิด/ปิดได้หลายหมวดพร้อมกัน'
+              : 'Toggle one or more types'}
+          </p>
         </div>
+
+        {/* Secondary Folder Quick-Jump Strip (scoped to active categories, strictly no numeric counts) */}
+        {categoryAlbums.length > 1 && (
+          <div
+            aria-label={lang === 'th' ? 'เลือกโฟลเดอร์ผลงาน' : 'Select portfolio folder'}
+            className="flex items-center gap-2 overflow-x-auto pb-3 mb-6 scrollbar-none"
+          >
+            <button
+              type="button"
+              onClick={() => setSelectedAlbumId('all')}
+              aria-pressed={selectedAlbumId === 'all'}
+              className={`px-3.5 py-1.5 text-xs font-medium rounded-lg whitespace-nowrap shrink-0 transition-all cursor-pointer ${
+                selectedAlbumId === 'all'
+                  ? 'bg-blue-500/20 text-cyan-200 border border-[#1da1ff]/60'
+                  : 'bg-white/[0.04] hover:bg-white/10 text-slate-400 hover:text-white border border-white/10'
+              }`}
+            >
+              {lang === 'th' ? 'ทุกอัลบั้มในหมวดนี้' : 'All in View'}
+            </button>
+            {categoryAlbums.map((album) => (
+              <button
+                type="button"
+                key={album.id}
+                onClick={() => setSelectedAlbumId(album.id)}
+                aria-pressed={selectedAlbumId === album.id}
+                className={`px-3.5 py-1.5 text-xs font-medium rounded-lg whitespace-nowrap shrink-0 transition-all cursor-pointer ${
+                  selectedAlbumId === album.id
+                    ? 'bg-blue-500/20 text-cyan-200 border border-[#1da1ff]/60'
+                    : 'bg-white/[0.04] hover:bg-white/10 text-slate-400 hover:text-white border border-white/10'
+                }`}
+              >
+                {lang === 'th' ? album.titleTh : album.titleEn}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Categorized Slide Albums Container */}
         <div className="space-y-6 sm:space-y-7">

@@ -13,6 +13,7 @@ import { ExperienceSkills } from './components/ExperienceSkills';
 import { ContactCta } from './components/ContactCta';
 import { Footer } from './components/Footer';
 import { SectionDivider } from './components/SectionDivider';
+import { BackToTopButton } from './components/BackToTopButton';
 import { Phone, MessageCircle } from 'lucide-react';
 import { RESUME_DATA } from './data/portfolioData';
 
@@ -80,6 +81,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer lang={lang} />
+
+      {/* Floating Back to Top button (bottom-left, visible past hero section) */}
+      <BackToTopButton heroId="home" lang={lang} />
 
       {/* Floating Quick Action Widget for quick mobile / desktop contact */}
       <aside aria-label="Quick contact" className="fixed bottom-6 right-6 z-40 flex flex-col gap-2.5 items-end">
