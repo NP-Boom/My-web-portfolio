@@ -50,18 +50,11 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, lang }) => {
 
             {/* Name & Title */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-2">
-              {RESUME_DATA.nameEn}
+              {RESUME_DATA.nameEn} (Boom)
             </h1>
-            <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-300 bg-clip-text text-transparent mb-3.5">
-              {lang === 'th' ? 'นักออกแบบกราฟิกมืออาชีพ (Boom)' : 'Professional Graphic Designer'}
+            <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-300 bg-clip-text text-transparent mb-7">
+              {lang === 'th' ? 'นักออกแบบกราฟิก' : 'Graphic Designer'}
             </h2>
-
-            {/* Description */}
-            <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed mb-6">
-              {lang === 'th'
-                ? 'เชี่ยวชาญการออกแบบสื่อโฆษณาออนไลน์ Facebook Ads, Infographic, สื่อโปรโมทสินค้า และสิ่งพิมพ์ (Brochure, Poster) ประสบการณ์กว่า 10+ ปี มุ่งเน้นดีไซน์ที่หยุดสายตาและกระตุ้นยอดขายจริง'
-                : 'I craft exceptional visual identities, high-converting social media ads, infographics, and print publications with over 10+ years of creative design experience.'}
-            </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-3.5">

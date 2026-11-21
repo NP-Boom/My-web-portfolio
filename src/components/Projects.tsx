@@ -16,6 +16,7 @@ import {
   PortfolioAlbum,
   PortfolioArtwork
 } from '../data/portfolioAlbums';
+import { getProjectDisplayMeta } from '../utils/projectMeta';
 import { RESUME_DATA } from '../data/portfolioData';
 
 interface ProjectsProps {
@@ -150,7 +151,7 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
             <div
               key={album.id}
               id={`album-${album.id}`}
-              className="rounded-2xl sm:rounded-3xl bg-[#091122]/75 border border-white/10 p-4 sm:p-6 shadow-xl relative overflow-hidden transition-all duration-300"
+              className="rounded-2xl sm:rounded-3xl bg-[#091122]/80 border-[1.5px] border-[#1da1ff]/75 hover:border-[#38d2ff] ring-1 ring-[#0077ff]/30 p-4 sm:p-6 shadow-[0_0_20px_rgba(14,165,233,0.28),inset_0_0_14px_rgba(37,99,235,0.14)] hover:shadow-[0_0_28px_rgba(56,189,248,0.45),inset_0_0_18px_rgba(37,99,235,0.22)] relative overflow-hidden transition-all duration-300"
             >
               {/* Album Header Bar */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
@@ -199,62 +200,80 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
                 className="flex items-center gap-4 sm:gap-5 overflow-x-auto pb-4 pt-1 scroll-smooth snap-x snap-mandatory scrollbar-thin scrollbar-thumb-white/10 hover:scrollbar-thumb-white/20"
                 style={{ scrollbarWidth: 'thin' }}
               >
-                {album.items.map((item) => (
-                  <div
-                    key={item.id}
-                    onClick={() => {
-                      setActiveItem(item);
-                      setZoomLevel(1);
-                    }}
-                    onContextMenu={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      triggerProtectedNotice();
-                    }}
-                    onDragStart={(e) => {
-                      e.preventDefault();
-                      return false;
-                    }}
-                    className="group relative flex-none w-56 sm:w-64 md:w-72 aspect-square rounded-2xl overflow-hidden bg-[#060a14] border border-white/10 hover:border-cyan-400/60 shadow-lg hover:shadow-2xl hover:shadow-blue-500/15 snap-start transition-all duration-300 cursor-pointer select-none protected-artwork"
-                  >
-                    {/* Pure artwork image: Protected from right-click save and dragging */}
-                    <img
-                      src={item.image}
-                      alt="ผลงานออกแบบ"
-                      loading="lazy"
-                      draggable={false}
-                      referrerPolicy="no-referrer"
-                      onError={(e) => {
-                        const target = e.currentTarget;
-                        if (target.src !== item.cdnFallback) {
-                          target.src = item.cdnFallback;
-                        }
+                {album.items.map((item) => {
+                  const meta = getProjectDisplayMeta(item, album, lang);
+                  return (
+                    <button
+                      type="button"
+                      key={item.id}
+                      onClick={() => {
+                        setActiveItem(item);
+                        setZoomLevel(1);
                       }}
-                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 pointer-events-none protected-artwork-img select-none"
-                    />
-
-                    {/* Transparent Click & Anti-Right-Click Interceptor Layer */}
-                    <div
-                      className="absolute inset-0 z-10 bg-transparent"
                       onContextMenu={(e) => {
                         e.preventDefault();
                         e.stopPropagation();
                         triggerProtectedNotice();
                       }}
-                    />
+                      onDragStart={(e) => {
+                        e.preventDefault();
+                        return false;
+                      }}
+                      aria-label={`${meta.title} — ${meta.description}`}
+                      className="group relative flex-none w-56 sm:w-64 md:w-72 aspect-square rounded-2xl overflow-hidden bg-[#060a14] border border-white/10 hover:border-cyan-400/70 shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 snap-start transition-all duration-300 ease-out cursor-pointer select-none protected-artwork text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+                    >
+                      {/* Pure artwork image: Smooth subtle scale on hover, protected from right-click save and dragging */}
+                      <img
+                        src={item.image}
+                        alt={meta.title}
+                        loading="lazy"
+                        draggable={false}
+                        referrerPolicy="no-referrer"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (target.src !== item.cdnFallback) {
+                            target.src = item.cdnFallback;
+                          }
+                        }}
+                        className="w-full h-full object-cover object-center transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 group-focus-visible:scale-105 pointer-events-none protected-artwork-img select-none will-change-transform"
+                      />
 
-                    {/* Minimalist Hover Overlay with Preview Icon */}
-                    <div className="absolute inset-0 z-20 bg-gradient-to-t from-black/80 via-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 pointer-events-none">
-                      <div className="p-3 rounded-full bg-blue-600/90 text-white shadow-xl transform scale-75 group-hover:scale-100 transition-transform">
-                        <Eye className="w-5 h-5" />
+                      {/* Transparent Click & Anti-Right-Click Interceptor Layer */}
+                      <div
+                        className="absolute inset-0 z-10 bg-transparent"
+                        onContextMenu={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          triggerProtectedNotice();
+                        }}
+                      />
+
+                      {/* Smooth Hover Overlay displaying Project Title & Description */}
+                      <div className="project-hover-overlay absolute inset-0 z-20 bg-gradient-to-t from-[#040814]/95 via-[#060d1f]/75 to-[#060d1f]/25 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-all duration-300 ease-out flex flex-col justify-between p-4 pointer-events-none">
+                        {/* Top row: Client/Category Tag & Preview Indicator */}
+                        <div className="flex items-center justify-between gap-2 transform -translate-y-1 group-hover:translate-y-0 group-focus-visible:translate-y-0 transition-transform duration-300 ease-out">
+                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-blue-600/30 border border-cyan-400/35 text-cyan-200 backdrop-blur-md truncate max-w-[70%]">
+                            {meta.tag}
+                          </span>
+                          <span className="inline-flex items-center gap-1 p-1.5 rounded-full bg-blue-600/85 text-white shadow-lg border border-white/20">
+                            <Eye className="w-3.5 h-3.5" />
+                            <Lock className="w-2.5 h-2.5 text-cyan-200" />
+                          </span>
+                        </div>
+
+                        {/* Bottom row: Project Title & Description */}
+                        <div className="transform translate-y-2 group-hover:translate-y-0 group-focus-visible:translate-y-0 transition-transform duration-300 ease-out">
+                          <h4 className="text-sm sm:text-[15px] font-bold text-white leading-snug line-clamp-2 drop-shadow-sm">
+                            {meta.title}
+                          </h4>
+                          <p className="text-xs text-slate-200/90 leading-relaxed line-clamp-3 mt-1.5">
+                            {meta.description}
+                          </p>
+                        </div>
                       </div>
-                      <span className="text-[11px] font-medium text-cyan-200 bg-black/75 px-2.5 py-0.5 rounded-full border border-white/15 flex items-center gap-1 shadow-sm">
-                        <Lock className="w-3 h-3 text-cyan-400" />
-                        <span>{lang === 'th' ? 'คลิกพรีวิวภาพ' : 'Click to Preview'}</span>
-                      </span>
-                    </div>
-                  </div>
-                ))}
+                    </button>
+                  );
+                })}
               </div>
 
               {/* Album Footer Helper Text */}
@@ -271,7 +290,10 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
       </div>
 
       {/* Lightbox Modal (Clean showcase without bold headings, strictly Preview Only) */}
-      {activeItem && (
+      {activeItem && (() => {
+        const activeAlbum = PORTFOLIO_ALBUMS.find((a) => a.id === activeItem.albumId) || PORTFOLIO_ALBUMS[0];
+        const activeMeta = getProjectDisplayMeta(activeItem, activeAlbum, lang);
+        return (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/92 backdrop-blur-md animate-fadeIn"
           onClick={() => {
@@ -292,18 +314,18 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
             }}
           >
             {/* Top Toolbar */}
-            <div className="flex items-center justify-between px-6 py-4 bg-[#080e1c] border-b border-white/10 text-xs select-none">
-              <div className="flex items-center gap-3">
-                <span className="font-semibold text-slate-300">
-                  {lang === 'th' ? activeItem.albumName : activeItem.albumName}
+            <div className="flex items-center justify-between gap-3 px-5 sm:px-6 py-3.5 bg-[#080e1c] border-b border-white/10 text-xs select-none">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-2.5 min-w-0">
+                <span className="font-semibold text-white truncate">
+                  {activeMeta.title}
                 </span>
-                <span className="text-slate-500">·</span>
-                <span className="text-slate-400 font-mono text-[11px]">
-                  Adobe Photoshop / Illustrator
+                <span className="hidden sm:inline text-slate-600">·</span>
+                <span className="text-cyan-300/90 text-[11px] truncate">
+                  {lang === 'th' ? activeAlbum.titleTh : activeAlbum.titleEn}
                 </span>
               </div>
 
-              <div className="flex items-center gap-2.5">
+              <div className="flex items-center gap-2.5 shrink-0">
                 {/* Protected Preview Badge (No Download Button) */}
                 <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/10 border border-amber-500/25 text-amber-300 text-xs font-semibold shadow-sm select-none">
                   <ShieldAlert className="w-3.5 h-3.5 text-amber-400 shrink-0" />
@@ -316,10 +338,12 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
                 </div>
 
                 <button
+                  type="button"
                   onClick={() => {
                     setActiveItem(null);
                     setZoomLevel(1);
                   }}
+                  aria-label={lang === 'th' ? 'ปิดหน้าต่างพรีวิว' : 'Close preview'}
                   className="p-1.5 rounded-lg bg-white/10 hover:bg-rose-500/80 text-white transition-colors cursor-pointer"
                   title="ปิด (ESC)"
                 >
@@ -428,7 +452,8 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
             </div>
           </div>
         </div>
-      )}
+        );
+      })()}
 
       {/* Floating Copyright Protection Toast Notification */}
       {showProtectedNotice && (

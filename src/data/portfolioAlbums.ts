@@ -13,6 +13,11 @@ export interface PortfolioArtwork {
   driveUrl: string;
   albumId: string;
   albumName: string;
+  titleTh?: string;
+  titleEn?: string;
+  descriptionTh?: string;
+  descriptionEn?: string;
+  client?: string;
 }
 
 export interface PortfolioAlbum {
