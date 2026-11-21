@@ -48,6 +48,226 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
     "folderDriveUrl": "https://drive.google.com/drive/folders/1QA3okWHAJnFcMfe3qUdAYkg3_veLIM1J?usp=sharing",
     "items": [
       {
+        "id": "ads-products-72",
+        "driveId": "13v0pAsb2n3vs7Y7uJ_LWmP1SYTeJi-ti",
+        "fileName": "ผลงานออกแบบ_Page_12.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/72_ผลงานออกแบบ_Page_12.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/13v0pAsb2n3vs7Y7uJ_LWmP1SYTeJi-ti",
+        "driveUrl": "https://drive.google.com/file/d/13v0pAsb2n3vs7Y7uJ_LWmP1SYTeJi-ti/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-71",
+        "driveId": "1-dEeJEAx5E2LRPvNVwM4GU6MehZ4cc0t",
+        "fileName": "ผลงานออกแบบ_Page_11.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/71_ผลงานออกแบบ_Page_11.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1-dEeJEAx5E2LRPvNVwM4GU6MehZ4cc0t",
+        "driveUrl": "https://drive.google.com/file/d/1-dEeJEAx5E2LRPvNVwM4GU6MehZ4cc0t/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-70",
+        "driveId": "1aF2kmE5Qbon9aEJQ3EDAIy0R8cidlwVp",
+        "fileName": "ผลงานออกแบบ_Page_09.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/70_ผลงานออกแบบ_Page_09.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1aF2kmE5Qbon9aEJQ3EDAIy0R8cidlwVp",
+        "driveUrl": "https://drive.google.com/file/d/1aF2kmE5Qbon9aEJQ3EDAIy0R8cidlwVp/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-69",
+        "driveId": "1P6a3PLbUTnutL42gu_1hdi8EJViAzir2",
+        "fileName": "ผลงานออกแบบ_Page_08.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/69_ผลงานออกแบบ_Page_08.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1P6a3PLbUTnutL42gu_1hdi8EJViAzir2",
+        "driveUrl": "https://drive.google.com/file/d/1P6a3PLbUTnutL42gu_1hdi8EJViAzir2/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-68",
+        "driveId": "1vtXtlqGXiTDIiY0LGdaQV7TswChmtxL_",
+        "fileName": "ผลงานออกแบบ_Page_06.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/68_ผลงานออกแบบ_Page_06.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1vtXtlqGXiTDIiY0LGdaQV7TswChmtxL_",
+        "driveUrl": "https://drive.google.com/file/d/1vtXtlqGXiTDIiY0LGdaQV7TswChmtxL_/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-67",
+        "driveId": "12iqgFf0wfuXFjh0rPw5fbXMM1f5mVJkv",
+        "fileName": "ผลงานออกแบบ_Page_05.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/67_ผลงานออกแบบ_Page_05.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/12iqgFf0wfuXFjh0rPw5fbXMM1f5mVJkv",
+        "driveUrl": "https://drive.google.com/file/d/12iqgFf0wfuXFjh0rPw5fbXMM1f5mVJkv/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-66",
+        "driveId": "1Co0udRjTBz5vbwaTAPqAU3G27VjUNhq2",
+        "fileName": "ผลงานออกแบบ_Page_04.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/66_ผลงานออกแบบ_Page_04.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1Co0udRjTBz5vbwaTAPqAU3G27VjUNhq2",
+        "driveUrl": "https://drive.google.com/file/d/1Co0udRjTBz5vbwaTAPqAU3G27VjUNhq2/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-65",
+        "driveId": "11NIzdNAfob_xbHY2C9hJeZAvoMsgxT-N",
+        "fileName": "ผลงานออกแบบ_Page_03.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/65_ผลงานออกแบบ_Page_03.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/11NIzdNAfob_xbHY2C9hJeZAvoMsgxT-N",
+        "driveUrl": "https://drive.google.com/file/d/11NIzdNAfob_xbHY2C9hJeZAvoMsgxT-N/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-64",
+        "driveId": "1cJYQTi77dqid7SIvgIHaBGWuZgsl6l7q",
+        "fileName": "ผลงานออกแบบ_Page_02.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/64_ผลงานออกแบบ_Page_02.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1cJYQTi77dqid7SIvgIHaBGWuZgsl6l7q",
+        "driveUrl": "https://drive.google.com/file/d/1cJYQTi77dqid7SIvgIHaBGWuZgsl6l7q/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-63",
+        "driveId": "1Ev4SNCMz0hPvC1zipPKVWRlkbI1TdVh1",
+        "fileName": "ผลงานออกแบบ_Page_01.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/63_ผลงานออกแบบ_Page_01.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1Ev4SNCMz0hPvC1zipPKVWRlkbI1TdVh1",
+        "driveUrl": "https://drive.google.com/file/d/1Ev4SNCMz0hPvC1zipPKVWRlkbI1TdVh1/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-62",
+        "driveId": "1l2SzJVMXjZZeRbTgevRdS3cQDxiW9EKP",
+        "fileName": "Screenshot 2567-07-10 at 12.41.16.png",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/62_Screenshot_2567-07-10_at_12.41.16.png",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1l2SzJVMXjZZeRbTgevRdS3cQDxiW9EKP",
+        "driveUrl": "https://drive.google.com/file/d/1l2SzJVMXjZZeRbTgevRdS3cQDxiW9EKP/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-61",
+        "driveId": "1KLEJwLLDKA5fbyADk_VbwDD7tBJ9og2p",
+        "fileName": "Portfolio-04.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/61_Portfolio-04.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1KLEJwLLDKA5fbyADk_VbwDD7tBJ9og2p",
+        "driveUrl": "https://drive.google.com/file/d/1KLEJwLLDKA5fbyADk_VbwDD7tBJ9og2p/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-60",
+        "driveId": "1VDoRK7yT-E1c6LHVqiqOHt_Rx0oys4Zr",
+        "fileName": "photo-collage.png-6.png",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/60_photo-collage.png-6.png",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1VDoRK7yT-E1c6LHVqiqOHt_Rx0oys4Zr",
+        "driveUrl": "https://drive.google.com/file/d/1VDoRK7yT-E1c6LHVqiqOHt_Rx0oys4Zr/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-59",
+        "driveId": "1csNUysHvJz-O167VqZf2qrGAghxKjv5d",
+        "fileName": "IMG_8772.JPG",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/59_IMG_8772.JPG",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1csNUysHvJz-O167VqZf2qrGAghxKjv5d",
+        "driveUrl": "https://drive.google.com/file/d/1csNUysHvJz-O167VqZf2qrGAghxKjv5d/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-58",
+        "driveId": "1Com4s8_vV2Bim_Zn-f7vk--ZLTMqDQGU",
+        "fileName": "1769994514388.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/58_1769994514388.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1Com4s8_vV2Bim_Zn-f7vk--ZLTMqDQGU",
+        "driveUrl": "https://drive.google.com/file/d/1Com4s8_vV2Bim_Zn-f7vk--ZLTMqDQGU/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-57",
+        "driveId": "1yWKAbfE7H0XsxDQN8P4sEkcpFEMgKmC8",
+        "fileName": "1769994513873.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/57_1769994513873.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1yWKAbfE7H0XsxDQN8P4sEkcpFEMgKmC8",
+        "driveUrl": "https://drive.google.com/file/d/1yWKAbfE7H0XsxDQN8P4sEkcpFEMgKmC8/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-56",
+        "driveId": "1LkSBvdTnOIn8NG1rSZvwpi0x3XEPU717",
+        "fileName": "1769994513374.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/56_1769994513374.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1LkSBvdTnOIn8NG1rSZvwpi0x3XEPU717",
+        "driveUrl": "https://drive.google.com/file/d/1LkSBvdTnOIn8NG1rSZvwpi0x3XEPU717/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-55",
+        "driveId": "1FZpi6oCVMrRwC7CuOpa98-zafVdn56Ag",
+        "fileName": "1769994500836.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/55_1769994500836.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1FZpi6oCVMrRwC7CuOpa98-zafVdn56Ag",
+        "driveUrl": "https://drive.google.com/file/d/1FZpi6oCVMrRwC7CuOpa98-zafVdn56Ag/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-54",
+        "driveId": "1kdrQT7ljRaiIF1hmUZzfbCLF2F6dZQFG",
+        "fileName": "1769386822090.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/54_1769386822090.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1kdrQT7ljRaiIF1hmUZzfbCLF2F6dZQFG",
+        "driveUrl": "https://drive.google.com/file/d/1kdrQT7ljRaiIF1hmUZzfbCLF2F6dZQFG/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-53",
+        "driveId": "1n2X6R9SmUURZL1RAAcBgztXn3QRYjePI",
+        "fileName": "1769386815272.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/53_1769386815272.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1n2X6R9SmUURZL1RAAcBgztXn3QRYjePI",
+        "driveUrl": "https://drive.google.com/file/d/1n2X6R9SmUURZL1RAAcBgztXn3QRYjePI/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-52",
+        "driveId": "19RQxU3c_xGHjQMZ5STAxVf3jyKQGhDhx",
+        "fileName": "1763337819162.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/52_1763337819162.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/19RQxU3c_xGHjQMZ5STAxVf3jyKQGhDhx",
+        "driveUrl": "https://drive.google.com/file/d/19RQxU3c_xGHjQMZ5STAxVf3jyKQGhDhx/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
+        "id": "ads-products-51",
+        "driveId": "1bncoarerOSacWtAg8_u5AYp-UdpRWSHL",
+        "fileName": "1762734754360.jpg",
+        "image": "/portfolio_all/ภาพ_Ads_สินค้า/51_1762734754360.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1bncoarerOSacWtAg8_u5AYp-UdpRWSHL",
+        "driveUrl": "https://drive.google.com/file/d/1bncoarerOSacWtAg8_u5AYp-UdpRWSHL/view?usp=sharing",
+        "albumId": "ads-products",
+        "albumName": "ภาพ Ads สินค้า"
+      },
+      {
         "id": "ads-products-50",
         "driveId": "1fvzwku2mv9EMDxxn-ZbOjKhqdnOWrhVT",
         "fileName": "1762306042483.jpg",
@@ -56,7 +276,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1fvzwku2mv9EMDxxn-ZbOjKhqdnOWrhVT/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-49",
         "driveId": "1ls7lnuMjmxABh-09z7rDSESDVgfqwSDY",
@@ -66,7 +286,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1ls7lnuMjmxABh-09z7rDSESDVgfqwSDY/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-48",
         "driveId": "1pFwLtNTLEecIyTZOJQSfp6PVU3fdmodL",
@@ -76,7 +296,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1pFwLtNTLEecIyTZOJQSfp6PVU3fdmodL/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-47",
         "driveId": "1gRoI_Epjtyv1OXtqXtVog9w-tGL72tz5",
@@ -86,7 +306,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1gRoI_Epjtyv1OXtqXtVog9w-tGL72tz5/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-46",
         "driveId": "120o0jLFD67GVbRFHrYPxqMRlK639qPny",
@@ -96,7 +316,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/120o0jLFD67GVbRFHrYPxqMRlK639qPny/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-45",
         "driveId": "1oi_m8rGWN7EfWfnnO_fR04gnnkk0bb1B",
@@ -106,7 +326,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1oi_m8rGWN7EfWfnnO_fR04gnnkk0bb1B/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-44",
         "driveId": "1pPjcZYitHGp29rlgIalAqE0LAR_STaKg",
@@ -116,7 +336,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1pPjcZYitHGp29rlgIalAqE0LAR_STaKg/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-43",
         "driveId": "1wPJ2rv-OvK_9UjGqoAJB8eH2Zr_NfZta",
@@ -126,7 +346,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1wPJ2rv-OvK_9UjGqoAJB8eH2Zr_NfZta/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-42",
         "driveId": "1rpJu5LxsI8YMMjNRZC_622cr499IV9x-",
@@ -136,7 +356,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1rpJu5LxsI8YMMjNRZC_622cr499IV9x-/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-41",
         "driveId": "10ukuQWMNaLLjKS97BHBnGp5azUe6yt43",
@@ -146,7 +366,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/10ukuQWMNaLLjKS97BHBnGp5azUe6yt43/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-40",
         "driveId": "1OM8-KYy_MYufwhrXTqmM9i_q6tysbHFC",
@@ -156,7 +376,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1OM8-KYy_MYufwhrXTqmM9i_q6tysbHFC/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-39",
         "driveId": "18n4MrO8QGBSngiPy6TIVs8c7EiJYOff4",
@@ -166,7 +386,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/18n4MrO8QGBSngiPy6TIVs8c7EiJYOff4/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-38",
         "driveId": "1AzE3SchgkZVFI8MOu4p3aJdoRxmOe5pC",
@@ -176,7 +396,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1AzE3SchgkZVFI8MOu4p3aJdoRxmOe5pC/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-37",
         "driveId": "1OOmu0M4gB1YpU8jX1D3F65lfX26f8LCQ",
@@ -186,7 +406,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1OOmu0M4gB1YpU8jX1D3F65lfX26f8LCQ/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-36",
         "driveId": "1SfjBgEpkkMZ3T8ZRkAXN71ZIc5qqmtpI",
@@ -196,7 +416,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1SfjBgEpkkMZ3T8ZRkAXN71ZIc5qqmtpI/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-35",
         "driveId": "1qhfvppUeAYIJ7NoOUZpsv_oNFJwbGYs9",
@@ -206,7 +426,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1qhfvppUeAYIJ7NoOUZpsv_oNFJwbGYs9/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-34",
         "driveId": "102CgVXTTp-tZXOgX2uZoEOTxhcs0TvgE",
@@ -216,7 +436,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/102CgVXTTp-tZXOgX2uZoEOTxhcs0TvgE/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-33",
         "driveId": "16nWdQVJ2g-FRqmEvNO_R8BiLs_fSM73U",
@@ -226,7 +446,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/16nWdQVJ2g-FRqmEvNO_R8BiLs_fSM73U/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-32",
         "driveId": "1JgPKhK6w4g5H6Xla-pjEyL1MkwNimIMA",
@@ -236,7 +456,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1JgPKhK6w4g5H6Xla-pjEyL1MkwNimIMA/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-31",
         "driveId": "111y0zt8xbvle-9pflzj1U3CH4TiIfi-2",
@@ -246,7 +466,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/111y0zt8xbvle-9pflzj1U3CH4TiIfi-2/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-30",
         "driveId": "1SgeCFIVRrKWtPmIh84UUJD9w_e1MSdWX",
@@ -256,7 +476,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1SgeCFIVRrKWtPmIh84UUJD9w_e1MSdWX/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-29",
         "driveId": "16OO7XqqeBoCC1G0bzMQRlmrtB2eNVlUu",
@@ -266,7 +486,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/16OO7XqqeBoCC1G0bzMQRlmrtB2eNVlUu/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-28",
         "driveId": "1NtJ5plfRrDcOx4z3lqTJDHI-inZ_k32R",
@@ -276,7 +496,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1NtJ5plfRrDcOx4z3lqTJDHI-inZ_k32R/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-27",
         "driveId": "1FJl3Z349ubVTBB5YlnwbOVBJSyC6nQ6E",
@@ -286,7 +506,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1FJl3Z349ubVTBB5YlnwbOVBJSyC6nQ6E/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-26",
         "driveId": "1Ty4dZKttX4tHg72G6LhW8Vy1_2IKDrhJ",
@@ -296,7 +516,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1Ty4dZKttX4tHg72G6LhW8Vy1_2IKDrhJ/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-25",
         "driveId": "1-R_nxBLvxMDa2ooOoLlDNIRSUo1kRjCI",
@@ -306,7 +526,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1-R_nxBLvxMDa2ooOoLlDNIRSUo1kRjCI/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-24",
         "driveId": "10ohKPfWKqUZjqTgetl2VE21XU1b2z_mk",
@@ -316,7 +536,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/10ohKPfWKqUZjqTgetl2VE21XU1b2z_mk/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-23",
         "driveId": "1GZL57gRBYrhRXtqEC8PLvRYXf_MxComK",
@@ -326,7 +546,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1GZL57gRBYrhRXtqEC8PLvRYXf_MxComK/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-22",
         "driveId": "1KKHYo5Xa5qVOKzweRzF2xrlomnyNcdFZ",
@@ -336,7 +556,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1KKHYo5Xa5qVOKzweRzF2xrlomnyNcdFZ/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-21",
         "driveId": "1vC9tWdV5mCyb0zIY4yArskizlmo88fcS",
@@ -346,7 +566,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1vC9tWdV5mCyb0zIY4yArskizlmo88fcS/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-20",
         "driveId": "1rDxfP4QeiirjTHv-e8l77wJ8-TqpEIbg",
@@ -356,7 +576,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1rDxfP4QeiirjTHv-e8l77wJ8-TqpEIbg/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-19",
         "driveId": "1l0q7mX0mxO3aDMLSOq4jlYpuJajtipIU",
@@ -366,7 +586,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1l0q7mX0mxO3aDMLSOq4jlYpuJajtipIU/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-18",
         "driveId": "1tBFALK_pF3UdstXIdfY7fm6MkZsDQDOL",
@@ -376,7 +596,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1tBFALK_pF3UdstXIdfY7fm6MkZsDQDOL/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-17",
         "driveId": "1uZsvjO0bkeyDwPTeChRPqTmbzfFbAifx",
@@ -386,7 +606,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1uZsvjO0bkeyDwPTeChRPqTmbzfFbAifx/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-16",
         "driveId": "1YoJ8WsShsqhFJr528-tBzKAzzYpikZxb",
@@ -396,7 +616,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1YoJ8WsShsqhFJr528-tBzKAzzYpikZxb/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-15",
         "driveId": "1Yk_Qn4HiP8ImNMgFo6zK1hIsYeQc_J6J",
@@ -406,7 +626,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1Yk_Qn4HiP8ImNMgFo6zK1hIsYeQc_J6J/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-14",
         "driveId": "1Vumx6Qg0lmqW0X0o3l0c4WwKmnrSG-AT",
@@ -416,7 +636,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1Vumx6Qg0lmqW0X0o3l0c4WwKmnrSG-AT/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-13",
         "driveId": "1oD6t6lPxALZ9T4-qh8YYCVqD6hIPrypb",
@@ -426,7 +646,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1oD6t6lPxALZ9T4-qh8YYCVqD6hIPrypb/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-12",
         "driveId": "1safeZe0rcP5Bg3gWOOwT-6Jsywyi3F5W",
@@ -436,7 +656,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1safeZe0rcP5Bg3gWOOwT-6Jsywyi3F5W/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-11",
         "driveId": "1qIxjYKZY9LQqitkWqDDUeA0MycJEGH3o",
@@ -446,7 +666,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1qIxjYKZY9LQqitkWqDDUeA0MycJEGH3o/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-10",
         "driveId": "1lzdEDGYSlA92QsUuSnA2fco7ZpefXM1p",
@@ -456,7 +676,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1lzdEDGYSlA92QsUuSnA2fco7ZpefXM1p/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-9",
         "driveId": "1vf6s8CtJxfa0IUGHmSWppMK0AZ9SulkP",
@@ -466,7 +686,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1vf6s8CtJxfa0IUGHmSWppMK0AZ9SulkP/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-8",
         "driveId": "173UZkYBeafhptrkF-Q9X_lQV_Pmqd7kD",
@@ -476,7 +696,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/173UZkYBeafhptrkF-Q9X_lQV_Pmqd7kD/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-7",
         "driveId": "1exMqCN4IPutLetaRKvNsvOgAKmXY4Aq2",
@@ -486,7 +706,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1exMqCN4IPutLetaRKvNsvOgAKmXY4Aq2/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-6",
         "driveId": "1suL0MonyzJ30xf_4C7OmMRPCVnW0nWZF",
@@ -496,7 +716,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1suL0MonyzJ30xf_4C7OmMRPCVnW0nWZF/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-5",
         "driveId": "122QpUT0P7SIswie_HEiN7j28jk34LPBM",
@@ -506,7 +726,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/122QpUT0P7SIswie_HEiN7j28jk34LPBM/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-4",
         "driveId": "1xdJPGRBgF_n2jN-uh7ilCxEVsHQVKCn1",
@@ -516,7 +736,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1xdJPGRBgF_n2jN-uh7ilCxEVsHQVKCn1/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-3",
         "driveId": "1B9Kc8RMU-I0xSYFv3uDSBX6tzeUUgCf1",
@@ -526,7 +746,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1B9Kc8RMU-I0xSYFv3uDSBX6tzeUUgCf1/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-2",
         "driveId": "1HcfR1SROUwbF5EHrI_RM08w74xvVpcvY",
@@ -536,7 +756,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1HcfR1SROUwbF5EHrI_RM08w74xvVpcvY/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-},
+      },
       {
         "id": "ads-products-1",
         "driveId": "1rwJrIOFNpDEAY68kzpFnmxhnEnu2gVlq",
@@ -546,7 +766,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1rwJrIOFNpDEAY68kzpFnmxhnEnu2gVlq/view?usp=sharing",
         "albumId": "ads-products",
         "albumName": "ภาพ Ads สินค้า"
-}
+      }
     ]
   },
   {
@@ -760,26 +980,6 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
     "folderDriveUrl": "https://drive.google.com/drive/folders/1JKJuAgbT0MHaqFWOQrykKgSpmFd3E-W_?usp=sharing",
     "items": [
       {
-        "id": "infographic-1",
-        "driveId": "1ft3wdycLkiM2FsKAF0dtpYWbHED6YGK4",
-        "fileName": "1.4.jpg",
-        "image": "/portfolio_all/Infographic/01_1.4.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1ft3wdycLkiM2FsKAF0dtpYWbHED6YGK4",
-        "driveUrl": "https://drive.google.com/file/d/1ft3wdycLkiM2FsKAF0dtpYWbHED6YGK4/view?usp=sharing",
-        "albumId": "infographic",
-        "albumName": "Infographic"
-      },
-      {
-        "id": "infographic-2",
-        "driveId": "1do7p2RMlVlBDJSSIX-ABNQSTMdMHdJqU",
-        "fileName": "2.2 Infographic 3 x Mock 1x3.jpg",
-        "image": "/portfolio_all/Infographic/02_2.2 Infographic 3 x Mock 1x3.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1do7p2RMlVlBDJSSIX-ABNQSTMdMHdJqU",
-        "driveUrl": "https://drive.google.com/file/d/1do7p2RMlVlBDJSSIX-ABNQSTMdMHdJqU/view?usp=sharing",
-        "albumId": "infographic",
-        "albumName": "Infographic"
-      },
-      {
         "id": "infographic-3",
         "driveId": "13X8-Mf71mtVnE-Z8Lb4I1RurpOjmRKw4",
         "fileName": "2.3.jpg",
@@ -858,6 +1058,26 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1tg2SAYznkjZWPzNOQ5hvECoHQivwbHe-/view?usp=sharing",
         "albumId": "infographic",
         "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-1",
+        "driveId": "1ft3wdycLkiM2FsKAF0dtpYWbHED6YGK4",
+        "fileName": "1.4.jpg",
+        "image": "/portfolio_all/Infographic/01_1.4.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1ft3wdycLkiM2FsKAF0dtpYWbHED6YGK4",
+        "driveUrl": "https://drive.google.com/file/d/1ft3wdycLkiM2FsKAF0dtpYWbHED6YGK4/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-2",
+        "driveId": "1do7p2RMlVlBDJSSIX-ABNQSTMdMHdJqU",
+        "fileName": "2.2 Infographic 3 x Mock 1x3.jpg",
+        "image": "/portfolio_all/Infographic/02_2.2 Infographic 3 x Mock 1x3.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1do7p2RMlVlBDJSSIX-ABNQSTMdMHdJqU",
+        "driveUrl": "https://drive.google.com/file/d/1do7p2RMlVlBDJSSIX-ABNQSTMdMHdJqU/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
       }
     ]
   },
@@ -873,66 +1093,6 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
     "badgeEn": "Publication",
     "folderDriveUrl": "https://drive.google.com/drive/folders/1SX1Y0Jyo3biAkM3Cpf5UNMIvp2rRAQ4L?usp=sharing",
     "items": [
-      {
-        "id": "poster-brochure-1",
-        "driveId": "1Vddsb3MqwAfpwqQDjQV8Te4mbrQdFQ5a",
-        "fileName": "1.5.jpg",
-        "image": "/portfolio_all/Poster_Brochure/01_1.5.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1Vddsb3MqwAfpwqQDjQV8Te4mbrQdFQ5a",
-        "driveUrl": "https://drive.google.com/file/d/1Vddsb3MqwAfpwqQDjQV8Te4mbrQdFQ5a/view?usp=sharing",
-        "albumId": "poster-brochure",
-        "albumName": "Poster + Brochure"
-      },
-      {
-        "id": "poster-brochure-2",
-        "driveId": "1WndmW-CP2UootKrlGZZa17eJ0asXmF9V",
-        "fileName": "1.6.jpg",
-        "image": "/portfolio_all/Poster_Brochure/02_1.6.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1WndmW-CP2UootKrlGZZa17eJ0asXmF9V",
-        "driveUrl": "https://drive.google.com/file/d/1WndmW-CP2UootKrlGZZa17eJ0asXmF9V/view?usp=sharing",
-        "albumId": "poster-brochure",
-        "albumName": "Poster + Brochure"
-      },
-      {
-        "id": "poster-brochure-3",
-        "driveId": "146hiIk8W0XbhSrYy7xmBqWEJ6k74aYGZ",
-        "fileName": "1.7.jpg",
-        "image": "/portfolio_all/Poster_Brochure/03_1.7.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/146hiIk8W0XbhSrYy7xmBqWEJ6k74aYGZ",
-        "driveUrl": "https://drive.google.com/file/d/146hiIk8W0XbhSrYy7xmBqWEJ6k74aYGZ/view?usp=sharing",
-        "albumId": "poster-brochure",
-        "albumName": "Poster + Brochure"
-      },
-      {
-        "id": "poster-brochure-4",
-        "driveId": "1ga4mJyzkPI4Uxu39h26I9o8vzoEhgHzn",
-        "fileName": "1.8.jpg",
-        "image": "/portfolio_all/Poster_Brochure/04_1.8.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1ga4mJyzkPI4Uxu39h26I9o8vzoEhgHzn",
-        "driveUrl": "https://drive.google.com/file/d/1ga4mJyzkPI4Uxu39h26I9o8vzoEhgHzn/view?usp=sharing",
-        "albumId": "poster-brochure",
-        "albumName": "Poster + Brochure"
-      },
-      {
-        "id": "poster-brochure-5",
-        "driveId": "1m1yyovOhlXhyE82osecgcQ9nXtu-Jo2b",
-        "fileName": "1.11.jpg",
-        "image": "/portfolio_all/Poster_Brochure/05_1.11.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1m1yyovOhlXhyE82osecgcQ9nXtu-Jo2b",
-        "driveUrl": "https://drive.google.com/file/d/1m1yyovOhlXhyE82osecgcQ9nXtu-Jo2b/view?usp=sharing",
-        "albumId": "poster-brochure",
-        "albumName": "Poster + Brochure"
-      },
-      {
-        "id": "poster-brochure-6",
-        "driveId": "1F_mXnegcmZlTWlwXubQiy3zjydAazUUZ",
-        "fileName": "1.21.jpg",
-        "image": "/portfolio_all/Poster_Brochure/06_1.21.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1F_mXnegcmZlTWlwXubQiy3zjydAazUUZ",
-        "driveUrl": "https://drive.google.com/file/d/1F_mXnegcmZlTWlwXubQiy3zjydAazUUZ/view?usp=sharing",
-        "albumId": "poster-brochure",
-        "albumName": "Poster + Brochure"
-      },
       {
         "id": "poster-brochure-7",
         "driveId": "1533GmizKqx6wgnwDv3CQWRcb2Zutjl8G",
@@ -1212,6 +1372,66 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1fdLX229vZCjKULAJPci3UOR264wAnrte/view?usp=sharing",
         "albumId": "poster-brochure",
         "albumName": "Poster + Brochure"
+      },
+      {
+        "id": "poster-brochure-1",
+        "driveId": "1Vddsb3MqwAfpwqQDjQV8Te4mbrQdFQ5a",
+        "fileName": "1.5.jpg",
+        "image": "/portfolio_all/Poster_Brochure/01_1.5.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1Vddsb3MqwAfpwqQDjQV8Te4mbrQdFQ5a",
+        "driveUrl": "https://drive.google.com/file/d/1Vddsb3MqwAfpwqQDjQV8Te4mbrQdFQ5a/view?usp=sharing",
+        "albumId": "poster-brochure",
+        "albumName": "Poster + Brochure"
+      },
+      {
+        "id": "poster-brochure-2",
+        "driveId": "1WndmW-CP2UootKrlGZZa17eJ0asXmF9V",
+        "fileName": "1.6.jpg",
+        "image": "/portfolio_all/Poster_Brochure/02_1.6.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1WndmW-CP2UootKrlGZZa17eJ0asXmF9V",
+        "driveUrl": "https://drive.google.com/file/d/1WndmW-CP2UootKrlGZZa17eJ0asXmF9V/view?usp=sharing",
+        "albumId": "poster-brochure",
+        "albumName": "Poster + Brochure"
+      },
+      {
+        "id": "poster-brochure-3",
+        "driveId": "146hiIk8W0XbhSrYy7xmBqWEJ6k74aYGZ",
+        "fileName": "1.7.jpg",
+        "image": "/portfolio_all/Poster_Brochure/03_1.7.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/146hiIk8W0XbhSrYy7xmBqWEJ6k74aYGZ",
+        "driveUrl": "https://drive.google.com/file/d/146hiIk8W0XbhSrYy7xmBqWEJ6k74aYGZ/view?usp=sharing",
+        "albumId": "poster-brochure",
+        "albumName": "Poster + Brochure"
+      },
+      {
+        "id": "poster-brochure-4",
+        "driveId": "1ga4mJyzkPI4Uxu39h26I9o8vzoEhgHzn",
+        "fileName": "1.8.jpg",
+        "image": "/portfolio_all/Poster_Brochure/04_1.8.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1ga4mJyzkPI4Uxu39h26I9o8vzoEhgHzn",
+        "driveUrl": "https://drive.google.com/file/d/1ga4mJyzkPI4Uxu39h26I9o8vzoEhgHzn/view?usp=sharing",
+        "albumId": "poster-brochure",
+        "albumName": "Poster + Brochure"
+      },
+      {
+        "id": "poster-brochure-5",
+        "driveId": "1m1yyovOhlXhyE82osecgcQ9nXtu-Jo2b",
+        "fileName": "1.11.jpg",
+        "image": "/portfolio_all/Poster_Brochure/05_1.11.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1m1yyovOhlXhyE82osecgcQ9nXtu-Jo2b",
+        "driveUrl": "https://drive.google.com/file/d/1m1yyovOhlXhyE82osecgcQ9nXtu-Jo2b/view?usp=sharing",
+        "albumId": "poster-brochure",
+        "albumName": "Poster + Brochure"
+      },
+      {
+        "id": "poster-brochure-6",
+        "driveId": "1F_mXnegcmZlTWlwXubQiy3zjydAazUUZ",
+        "fileName": "1.21.jpg",
+        "image": "/portfolio_all/Poster_Brochure/06_1.21.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1F_mXnegcmZlTWlwXubQiy3zjydAazUUZ",
+        "driveUrl": "https://drive.google.com/file/d/1F_mXnegcmZlTWlwXubQiy3zjydAazUUZ/view?usp=sharing",
+        "albumId": "poster-brochure",
+        "albumName": "Poster + Brochure"
       }
     ]
   },
@@ -1227,6 +1447,66 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
     "badgeEn": "Folded Media",
     "folderDriveUrl": "https://drive.google.com/drive/folders/1FXPL7L12IzdFitd6O_b-o3MYWcp5gYCj?usp=sharing",
     "items": [
+      {
+        "id": "leaflet-brochure-9",
+        "driveId": "122EmPEcuEgezik1zM5oDgMtQ08XcR4BZ",
+        "fileName": "48. PF8Y181.jpg",
+        "image": "/portfolio_all/Leaflet_Brochure/09_48. PF8Y181.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/122EmPEcuEgezik1zM5oDgMtQ08XcR4BZ",
+        "driveUrl": "https://drive.google.com/file/d/122EmPEcuEgezik1zM5oDgMtQ08XcR4BZ/view?usp=sharing",
+        "albumId": "leaflet-brochure",
+        "albumName": "Leaflet / Brochure"
+      },
+      {
+        "id": "leaflet-brochure-10",
+        "driveId": "1qgoWYsGjdUUeuKFEM7RgMrd1J4SXvuFQ",
+        "fileName": "118781128_726066851366278_7070742736411869450_n.jpeg",
+        "image": "/portfolio_all/Leaflet_Brochure/10_118781128_726066851366278_7070742736411869450_n.jpeg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1qgoWYsGjdUUeuKFEM7RgMrd1J4SXvuFQ",
+        "driveUrl": "https://drive.google.com/file/d/1qgoWYsGjdUUeuKFEM7RgMrd1J4SXvuFQ/view?usp=sharing",
+        "albumId": "leaflet-brochure",
+        "albumName": "Leaflet / Brochure"
+      },
+      {
+        "id": "leaflet-brochure-11",
+        "driveId": "1DKNBsXOyqvtBGX8G79hvMY7UOgpm7SLy",
+        "fileName": "Portfolio-01 2.jpg",
+        "image": "/portfolio_all/Leaflet_Brochure/11_Portfolio-01 2.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1DKNBsXOyqvtBGX8G79hvMY7UOgpm7SLy",
+        "driveUrl": "https://drive.google.com/file/d/1DKNBsXOyqvtBGX8G79hvMY7UOgpm7SLy/view?usp=sharing",
+        "albumId": "leaflet-brochure",
+        "albumName": "Leaflet / Brochure"
+      },
+      {
+        "id": "leaflet-brochure-12",
+        "driveId": "1ITkDzd1Ifds1nYKT_tqFqa6iwCdjuWMW",
+        "fileName": "Portfolio-01 copy.jpg",
+        "image": "/portfolio_all/Leaflet_Brochure/12_Portfolio-01 copy.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1ITkDzd1Ifds1nYKT_tqFqa6iwCdjuWMW",
+        "driveUrl": "https://drive.google.com/file/d/1ITkDzd1Ifds1nYKT_tqFqa6iwCdjuWMW/view?usp=sharing",
+        "albumId": "leaflet-brochure",
+        "albumName": "Leaflet / Brochure"
+      },
+      {
+        "id": "leaflet-brochure-13",
+        "driveId": "1gnMgYaHDY5Y6unA8TG3mDKgArjt4QJiZ",
+        "fileName": "Portfolio-02.jpg",
+        "image": "/portfolio_all/Leaflet_Brochure/13_Portfolio-02.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1gnMgYaHDY5Y6unA8TG3mDKgArjt4QJiZ",
+        "driveUrl": "https://drive.google.com/file/d/1gnMgYaHDY5Y6unA8TG3mDKgArjt4QJiZ/view?usp=sharing",
+        "albumId": "leaflet-brochure",
+        "albumName": "Leaflet / Brochure"
+      },
+      {
+        "id": "leaflet-brochure-14",
+        "driveId": "1dJtCX7BOwn7voYQsLw12NdGHq34H7FYi",
+        "fileName": "Portfolio-03 2.jpg",
+        "image": "/portfolio_all/Leaflet_Brochure/14_Portfolio-03 2.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1dJtCX7BOwn7voYQsLw12NdGHq34H7FYi",
+        "driveUrl": "https://drive.google.com/file/d/1dJtCX7BOwn7voYQsLw12NdGHq34H7FYi/view?usp=sharing",
+        "albumId": "leaflet-brochure",
+        "albumName": "Leaflet / Brochure"
+      },
       {
         "id": "leaflet-brochure-1",
         "driveId": "1uyqwGgV5eHdLkISRp2scrtIxd_4t9NV-",
@@ -1304,66 +1584,6 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "image": "/portfolio_all/Leaflet_Brochure/08_45.jpg",
         "cdnFallback": "https://lh3.googleusercontent.com/d/1U5GJjWA7GG27qM8JCDabvxPQBiCjuFMX",
         "driveUrl": "https://drive.google.com/file/d/1U5GJjWA7GG27qM8JCDabvxPQBiCjuFMX/view?usp=sharing",
-        "albumId": "leaflet-brochure",
-        "albumName": "Leaflet / Brochure"
-      },
-      {
-        "id": "leaflet-brochure-9",
-        "driveId": "122EmPEcuEgezik1zM5oDgMtQ08XcR4BZ",
-        "fileName": "48. PF8Y181.jpg",
-        "image": "/portfolio_all/Leaflet_Brochure/09_48. PF8Y181.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/122EmPEcuEgezik1zM5oDgMtQ08XcR4BZ",
-        "driveUrl": "https://drive.google.com/file/d/122EmPEcuEgezik1zM5oDgMtQ08XcR4BZ/view?usp=sharing",
-        "albumId": "leaflet-brochure",
-        "albumName": "Leaflet / Brochure"
-      },
-      {
-        "id": "leaflet-brochure-10",
-        "driveId": "1qgoWYsGjdUUeuKFEM7RgMrd1J4SXvuFQ",
-        "fileName": "118781128_726066851366278_7070742736411869450_n.jpeg",
-        "image": "/portfolio_all/Leaflet_Brochure/10_118781128_726066851366278_7070742736411869450_n.jpeg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1qgoWYsGjdUUeuKFEM7RgMrd1J4SXvuFQ",
-        "driveUrl": "https://drive.google.com/file/d/1qgoWYsGjdUUeuKFEM7RgMrd1J4SXvuFQ/view?usp=sharing",
-        "albumId": "leaflet-brochure",
-        "albumName": "Leaflet / Brochure"
-      },
-      {
-        "id": "leaflet-brochure-11",
-        "driveId": "1DKNBsXOyqvtBGX8G79hvMY7UOgpm7SLy",
-        "fileName": "Portfolio-01 2.jpg",
-        "image": "/portfolio_all/Leaflet_Brochure/11_Portfolio-01 2.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1DKNBsXOyqvtBGX8G79hvMY7UOgpm7SLy",
-        "driveUrl": "https://drive.google.com/file/d/1DKNBsXOyqvtBGX8G79hvMY7UOgpm7SLy/view?usp=sharing",
-        "albumId": "leaflet-brochure",
-        "albumName": "Leaflet / Brochure"
-      },
-      {
-        "id": "leaflet-brochure-12",
-        "driveId": "1ITkDzd1Ifds1nYKT_tqFqa6iwCdjuWMW",
-        "fileName": "Portfolio-01 copy.jpg",
-        "image": "/portfolio_all/Leaflet_Brochure/12_Portfolio-01 copy.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1ITkDzd1Ifds1nYKT_tqFqa6iwCdjuWMW",
-        "driveUrl": "https://drive.google.com/file/d/1ITkDzd1Ifds1nYKT_tqFqa6iwCdjuWMW/view?usp=sharing",
-        "albumId": "leaflet-brochure",
-        "albumName": "Leaflet / Brochure"
-      },
-      {
-        "id": "leaflet-brochure-13",
-        "driveId": "1gnMgYaHDY5Y6unA8TG3mDKgArjt4QJiZ",
-        "fileName": "Portfolio-02.jpg",
-        "image": "/portfolio_all/Leaflet_Brochure/13_Portfolio-02.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1gnMgYaHDY5Y6unA8TG3mDKgArjt4QJiZ",
-        "driveUrl": "https://drive.google.com/file/d/1gnMgYaHDY5Y6unA8TG3mDKgArjt4QJiZ/view?usp=sharing",
-        "albumId": "leaflet-brochure",
-        "albumName": "Leaflet / Brochure"
-      },
-      {
-        "id": "leaflet-brochure-14",
-        "driveId": "1dJtCX7BOwn7voYQsLw12NdGHq34H7FYi",
-        "fileName": "Portfolio-03 2.jpg",
-        "image": "/portfolio_all/Leaflet_Brochure/14_Portfolio-03 2.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1dJtCX7BOwn7voYQsLw12NdGHq34H7FYi",
-        "driveUrl": "https://drive.google.com/file/d/1dJtCX7BOwn7voYQsLw12NdGHq34H7FYi/view?usp=sharing",
         "albumId": "leaflet-brochure",
         "albumName": "Leaflet / Brochure"
       }

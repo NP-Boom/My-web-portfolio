@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Mail, FileDown, CheckCircle2, Sparkles, FolderOpen } from 'lucide-react';
 import { RESUME_DATA } from '../data/portfolioData';
+import { HeroParticles } from './HeroParticles';
 
 interface HeroProps {
   onContactClick: () => void;
@@ -36,6 +37,9 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, lang }) => {
         {/* Gradients to keep text super legible on left while showing 3D geometry clearly */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#060b14] via-[#060b14]/35 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#060b14]/90 via-[#060b14]/50 to-transparent" />
+
+        {/* Subtle animated studio particle layer */}
+        <HeroParticles />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

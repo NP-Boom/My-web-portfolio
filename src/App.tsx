@@ -12,6 +12,7 @@ import { Projects } from './components/Projects';
 import { ExperienceSkills } from './components/ExperienceSkills';
 import { ContactCta } from './components/ContactCta';
 import { Footer } from './components/Footer';
+import { SectionDivider } from './components/SectionDivider';
 import { Phone, MessageCircle } from 'lucide-react';
 import { RESUME_DATA } from './data/portfolioData';
 
@@ -49,21 +50,33 @@ export default function App() {
         {/* Hero Section */}
         <Hero onContactClick={scrollToContact} lang={lang} />
 
+        <SectionDivider />
+
         {/* About Section (ข้อมูลติดต่อและโปรไฟล์) */}
         <About lang={lang} />
+
+        <SectionDivider />
 
         {/* Portfolio Showcase (ต่อจากส่วนข้อมูลติดต่อและโปรไฟล์) */}
         <Projects lang={lang} />
 
+        <SectionDivider />
+
         {/* Services Section */}
         <Services lang={lang} />
+
+        <SectionDivider />
 
         {/* Skills & Experience Timeline */}
         <ExperienceSkills lang={lang} />
 
+        <SectionDivider />
+
         {/* Contact & Inquiry Banner */}
         <ContactCta lang={lang} />
       </main>
+
+      <SectionDivider />
 
       {/* Footer */}
       <Footer lang={lang} />

@@ -60,3 +60,31 @@
     display: none !important;
   }
 }
+
+/* Subtle floating animation for portfolio project items */
+@keyframes project-card-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, var(--float-distance, -6px), 0);
+  }
+}
+
+.project-float-item {
+  animation: project-card-float var(--float-duration, 5.2s) ease-in-out var(--float-delay, 0s) infinite;
+  will-change: transform;
+}
+
+.project-float-trigger:hover .project-float-item,
+.project-float-trigger:focus-visible .project-float-item {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-float-item {
+    animation: none;
+    will-change: auto;
+  }
+}
+

@@ -36,7 +36,7 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
   };
 
   return (
-    <section id="about" className="py-10 sm:py-14 relative bg-[#070d18]/90 border-t border-white/5">
+    <section id="about" className="py-10 sm:py-14 relative bg-[#070d18]/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           {/* Left Column: Story & Highlights */}

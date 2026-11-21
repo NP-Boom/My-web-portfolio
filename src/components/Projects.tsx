@@ -13,11 +13,9 @@ import {
 import {
   PORTFOLIO_ALBUMS,
   ALL_PORTFOLIO_ITEMS,
-  PortfolioAlbum,
   PortfolioArtwork
 } from '../data/portfolioAlbums';
-import { getProjectDisplayMeta } from '../utils/projectMeta';
-import { RESUME_DATA } from '../data/portfolioData';
+import { getProjectFloatStyle } from '../utils/floatAnimation';
 
 interface ProjectsProps {
   lang: 'th' | 'en';
@@ -116,7 +114,7 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
   };
 
   return (
-    <section id="projects" className="py-10 sm:py-12 relative bg-[#070d18]/90 border-t border-white/5">
+    <section id="projects" className="py-10 sm:py-12 relative bg-[#070d18]/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Quick Folder Category Filter Tabs (Strictly no numeric counts) */}
         <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-6 scrollbar-none border-b border-white/10">
@@ -147,7 +145,7 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
 
         {/* Categorized Slide Albums Container */}
         <div className="space-y-6 sm:space-y-7">
-          {displayedAlbums.map((album) => (
+          {displayedAlbums.map((album, albumIndex) => (
             <div
               key={album.id}
               id={`album-${album.id}`}
@@ -197,83 +195,70 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
                 ref={(el) => {
                   scrollContainers.current[album.id] = el;
                 }}
-                className="flex items-center gap-4 sm:gap-5 overflow-x-auto pb-4 pt-1 scroll-smooth snap-x snap-mandatory scrollbar-thin scrollbar-thumb-white/10 hover:scrollbar-thumb-white/20"
+                className="flex items-center gap-4 sm:gap-5 overflow-x-auto pb-5 pt-3.5 px-1 scroll-smooth snap-x snap-mandatory scrollbar-thin scrollbar-thumb-white/10 hover:scrollbar-thumb-white/20"
                 style={{ scrollbarWidth: 'thin' }}
               >
-                {album.items.map((item) => {
-                  const meta = getProjectDisplayMeta(item, album, lang);
-                  return (
-                    <button
-                      type="button"
-                      key={item.id}
-                      onClick={() => {
-                        setActiveItem(item);
-                        setZoomLevel(1);
-                      }}
-                      onContextMenu={(e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        triggerProtectedNotice();
-                      }}
-                      onDragStart={(e) => {
-                        e.preventDefault();
-                        return false;
-                      }}
-                      aria-label={`${meta.title} — ${meta.description}`}
-                      className="group relative flex-none w-56 sm:w-64 md:w-72 aspect-square rounded-2xl overflow-hidden bg-[#060a14] border border-white/10 hover:border-cyan-400/70 shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 snap-start transition-all duration-300 ease-out cursor-pointer select-none protected-artwork text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+                {album.items.map((item, itemIndex) => (
+                  <button
+                    type="button"
+                    key={item.id}
+                    onClick={() => {
+                      setActiveItem(item);
+                      setZoomLevel(1);
+                    }}
+                    onContextMenu={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      triggerProtectedNotice();
+                    }}
+                    onDragStart={(e) => {
+                      e.preventDefault();
+                      return false;
+                    }}
+                    aria-label={lang === 'th' ? `เปิดดูภาพผลงานในหมวด ${album.titleTh}` : `Preview artwork in ${album.titleEn}`}
+                    className="project-float-trigger group relative flex-none w-56 sm:w-64 md:w-72 aspect-square rounded-2xl snap-start cursor-pointer select-none protected-artwork focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#091122]"
+                  >
+                    <div
+                      style={getProjectFloatStyle(itemIndex, albumIndex)}
+                      className="project-float-item w-full h-full"
                     >
-                      {/* Pure artwork image: Smooth subtle scale on hover, protected from right-click save and dragging */}
-                      <img
-                        src={item.image}
-                        alt={meta.title}
-                        loading="lazy"
-                        draggable={false}
-                        referrerPolicy="no-referrer"
-                        onError={(e) => {
-                          const target = e.currentTarget;
-                          if (target.src !== item.cdnFallback) {
-                            target.src = item.cdnFallback;
-                          }
-                        }}
-                        className="w-full h-full object-cover object-center transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 group-focus-visible:scale-105 pointer-events-none protected-artwork-img select-none will-change-transform"
-                      />
+                      <div className="relative w-full h-full rounded-2xl overflow-hidden bg-[#060a14] border border-white/10 group-hover:border-cyan-400/70 shadow-lg group-hover:shadow-[0_14px_30px_rgba(14,165,233,0.28)] group-hover:-translate-y-1.5 group-focus-visible:-translate-y-1.5 transition-all duration-300 ease-out">
+                        {/* Pure artwork image: Smooth subtle scale on hover, protected from right-click save and dragging */}
+                        <img
+                          src={item.image}
+                          alt={lang === 'th' ? album.titleTh : album.titleEn}
+                          loading="lazy"
+                          draggable={false}
+                          referrerPolicy="no-referrer"
+                          onError={(e) => {
+                            const target = e.currentTarget;
+                            if (target.src !== item.cdnFallback) {
+                              target.src = item.cdnFallback;
+                            }
+                          }}
+                          className="w-full h-full object-cover object-center transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 group-focus-visible:scale-105 pointer-events-none protected-artwork-img select-none will-change-transform"
+                        />
 
-                      {/* Transparent Click & Anti-Right-Click Interceptor Layer */}
-                      <div
-                        className="absolute inset-0 z-10 bg-transparent"
-                        onContextMenu={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          triggerProtectedNotice();
-                        }}
-                      />
+                        {/* Transparent Click & Anti-Right-Click Interceptor Layer */}
+                        <div
+                          className="absolute inset-0 z-10 bg-transparent"
+                          onContextMenu={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            triggerProtectedNotice();
+                          }}
+                        />
 
-                      {/* Smooth Hover Overlay displaying Project Title & Description */}
-                      <div className="project-hover-overlay absolute inset-0 z-20 bg-gradient-to-t from-[#040814]/95 via-[#060d1f]/75 to-[#060d1f]/25 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-all duration-300 ease-out flex flex-col justify-between p-4 pointer-events-none">
-                        {/* Top row: Client/Category Tag & Preview Indicator */}
-                        <div className="flex items-center justify-between gap-2 transform -translate-y-1 group-hover:translate-y-0 group-focus-visible:translate-y-0 transition-transform duration-300 ease-out">
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-blue-600/30 border border-cyan-400/35 text-cyan-200 backdrop-blur-md truncate max-w-[70%]">
-                            {meta.tag}
-                          </span>
-                          <span className="inline-flex items-center gap-1 p-1.5 rounded-full bg-blue-600/85 text-white shadow-lg border border-white/20">
-                            <Eye className="w-3.5 h-3.5" />
-                            <Lock className="w-2.5 h-2.5 text-cyan-200" />
-                          </span>
-                        </div>
-
-                        {/* Bottom row: Project Title & Description */}
-                        <div className="transform translate-y-2 group-hover:translate-y-0 group-focus-visible:translate-y-0 transition-transform duration-300 ease-out">
-                          <h4 className="text-sm sm:text-[15px] font-bold text-white leading-snug line-clamp-2 drop-shadow-sm">
-                            {meta.title}
-                          </h4>
-                          <p className="text-xs text-slate-200/90 leading-relaxed line-clamp-3 mt-1.5">
-                            {meta.description}
-                          </p>
+                        {/* Clean Minimalist Hover Overlay (Icon only, no text descriptions) */}
+                        <div className="absolute inset-0 z-20 bg-black/35 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                          <div className="p-3 rounded-full bg-blue-600/90 text-white shadow-xl border border-white/20 transform scale-75 group-hover:scale-100 group-focus-visible:scale-100 transition-transform duration-300">
+                            <Eye className="w-5 h-5" />
+                          </div>
                         </div>
                       </div>
-                    </button>
-                  );
-                })}
+                    </div>
+                  </button>
+                ))}
               </div>
 
               {/* Album Footer Helper Text */}
@@ -292,7 +277,6 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
       {/* Lightbox Modal (Clean showcase without bold headings, strictly Preview Only) */}
       {activeItem && (() => {
         const activeAlbum = PORTFOLIO_ALBUMS.find((a) => a.id === activeItem.albumId) || PORTFOLIO_ALBUMS[0];
-        const activeMeta = getProjectDisplayMeta(activeItem, activeAlbum, lang);
         return (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/92 backdrop-blur-md animate-fadeIn"
@@ -315,12 +299,8 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
           >
             {/* Top Toolbar */}
             <div className="flex items-center justify-between gap-3 px-5 sm:px-6 py-3.5 bg-[#080e1c] border-b border-white/10 text-xs select-none">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-2.5 min-w-0">
-                <span className="font-semibold text-white truncate">
-                  {activeMeta.title}
-                </span>
-                <span className="hidden sm:inline text-slate-600">·</span>
-                <span className="text-cyan-300/90 text-[11px] truncate">
+              <div className="flex items-center gap-2.5 min-w-0">
+                <span className="font-semibold text-slate-200 truncate">
                   {lang === 'th' ? activeAlbum.titleTh : activeAlbum.titleEn}
                 </span>
               </div>
