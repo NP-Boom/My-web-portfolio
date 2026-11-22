@@ -26,7 +26,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export const Services: React.FC<ServicesProps> = ({ onServiceSelect, lang }) => {
   return (
-    <section id="services" className="py-12 sm:py-14 relative bg-[#060b14]/90">
+    <section id="services" className="py-12 sm:py-14 relative bg-[#060b14]/80">
       {/* Background ambient light */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-blue-600/10 blur-[140px] pointer-events-none rounded-full" />
 

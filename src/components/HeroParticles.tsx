@@ -182,7 +182,7 @@ export const HeroParticles: React.FC = () => {
       ref={canvasRef}
       data-testid="hero-particles-canvas"
       aria-hidden="true"
-      className="absolute inset-0 w-full h-full pointer-events-none opacity-90"
+      className="absolute inset-0 w-full h-full pointer-events-none opacity-90 transform-gpu"
     />
   );
 };

@@ -143,7 +143,7 @@ export const Projects: React.FC<ProjectsProps> = ({ lang }) => {
   const isAllActive = activeCategories.length === 0;
 
   return (
-    <section id="projects" className="scroll-mt-20 py-10 sm:py-12 relative bg-[#070d18]/90">
+    <section id="projects" className="scroll-mt-20 py-10 sm:py-12 relative bg-[#070d18]/84">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Primary Category Filter Bar (Multi-toggle by portfolio type, strictly no numeric counts) */}
         <div

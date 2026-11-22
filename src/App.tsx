@@ -29,18 +29,15 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#060b14] text-slate-200 selection:bg-blue-600 selection:text-white relative">
-      {/* Global 3D Black Cubes Abstract Wallpaper - Graded in Deep Cyber/Sapphire Blue */}
-      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+      {/* Global Manhattan Skyline Wallpaper (single shared layer for sharp 4K rendering) */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden bg-[#060b14] transform-gpu" aria-hidden="true">
         <img
-          src="/assets/aistudio/black-cubes-background-abstract_b531b825.jpg"
+          src="/assets/aistudio/top-view-over-manhattan-from-empire-state-3840x2160_87548-mm-90_d6cb1e16.jpg"
           alt=""
-          className="w-full h-full object-cover object-center opacity-30 scale-100"
-          style={{
-            filter: 'sepia(100%) hue-rotate(190deg) saturate(380%) brightness(0.75) contrast(1.2)',
-          }}
+          decoding="async"
+          className="w-full h-full object-cover object-[center_42%] opacity-100 brightness-[0.95] contrast-[1.08] saturate-[1.06]"
         />
-        <div className="absolute inset-0 bg-[#060b14]/50 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#060b14]/60 via-[#060b14]/30 to-[#060b14]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#040914]/55 via-transparent to-[#060b14]/40" />
       </div>
 
       {/* Top Navbar */}

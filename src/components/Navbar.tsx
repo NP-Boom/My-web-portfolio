@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick, lang, setLang })
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-[#060b14]/90 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/40 py-3.5'
-          : 'bg-transparent py-5'
+          : 'bg-gradient-to-b from-[#040914]/85 via-[#040914]/45 to-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,7 +57,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick, lang, setLang })
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-200 drop-shadow-[0_1px_6px_rgba(2,6,23,0.85)]">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -74,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick, lang, setLang })
             {/* Language Switch */}
             <button
               onClick={() => setLang(lang === 'th' ? 'en' : 'th')}
-              className="px-2.5 py-1 text-xs font-semibold rounded-lg border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
+              className="px-2.5 py-1 text-xs font-semibold rounded-lg border border-white/15 bg-[#070f1f]/65 backdrop-blur-sm text-slate-200 hover:text-white hover:bg-[#0b162c]/85 transition-colors"
               title="สลับภาษา / Switch Language"
             >
               {lang === 'th' ? 'EN' : 'TH'}
@@ -85,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick, lang, setLang })
               href={RESUME_DATA.pdfResumeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium rounded-lg text-slate-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 transition-all"
+              className="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium rounded-lg text-slate-200 hover:text-white bg-[#070f1f]/65 hover:bg-[#0b162c]/85 backdrop-blur-sm border border-white/15 transition-all"
             >
               <FileDown className="w-3.5 h-3.5 text-blue-400" />
               <span>Resume PDF</span>

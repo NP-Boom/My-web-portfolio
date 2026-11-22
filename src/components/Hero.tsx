@@ -11,32 +11,14 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ onContactClick, lang }) => {
   return (
     <section id="home" className="relative pt-24 pb-12 md:pt-28 md:pb-16 overflow-hidden">
-      {/* Background Hero Scenery - Minimalist Designer Desk in Website Blue Tone */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        {/* Base dark container */}
-        <div className="absolute inset-0 bg-[#060b14]" />
+      {/* Hero Atmosphere & Directional Contrast Scrims over Global Manhattan Skyline */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        {/* Soft ambient horizon glow */}
+        <div className="absolute top-1/4 left-1/3 w-[600px] h-[360px] bg-blue-500/12 blur-[130px] rounded-full" />
 
-        {/* 3D Black Cubes Abstract Backdrop with deep blue duotone grading */}
-        <img
-          src="/assets/aistudio/black-cubes-background-abstract_b531b825.jpg"
-          alt="Abstract 3D black cubes backdrop"
-          className="w-full h-full object-cover object-[center_35%] opacity-75 scale-105"
-          style={{
-            filter: 'sepia(100%) hue-rotate(190deg) saturate(380%) brightness(0.85) contrast(1.25)',
-          }}
-        />
-
-        {/* Deep blue color wash and blend layers */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#051329]/80 via-[#09224d]/45 to-[#061022]/70 mix-blend-color" />
-        <div className="absolute inset-0 bg-blue-600/15 mix-blend-overlay" />
-
-        {/* Ambient atmospheric glow highlights matching 3D edges */}
-        <div className="absolute top-1/4 left-1/3 w-[650px] h-[400px] bg-blue-500/25 blur-[130px] pointer-events-none rounded-full" />
-        <div className="absolute top-1/3 right-1/4 w-[400px] h-[350px] bg-cyan-500/20 blur-[120px] pointer-events-none rounded-full" />
-
-        {/* Gradients to keep text super legible on left while showing 3D geometry clearly */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#060b14] via-[#060b14]/35 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#060b14]/90 via-[#060b14]/50 to-transparent" />
+        {/* Directional scrims keeping left typography crisp while showcasing the sharp Manhattan skyline */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#060b14] via-transparent to-[#040914]/15" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#040914]/78 via-[#040914]/32 to-transparent" />
 
         {/* Subtle animated studio particle layer */}
         <HeroParticles />
@@ -47,16 +29,16 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, lang }) => {
           {/* Left Column: Hero Text */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             {/* Greeting badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold tracking-wide mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#060b14]/65 backdrop-blur-sm border border-blue-400/30 text-blue-300 text-xs font-semibold tracking-wide mb-3 shadow-md shadow-black/30">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
               <span>{lang === 'th' ? 'สวัสดีครับ ยินดีต้อนรับ' : "Hello, I'm"}</span>
             </div>
 
             {/* Name & Title */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-2">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-2 drop-shadow-[0_4px_20px_rgba(2,6,23,0.9)]">
               {RESUME_DATA.nameEn} (Boom)
             </h1>
-            <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-300 bg-clip-text text-transparent mb-7">
+            <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-300 via-cyan-200 to-indigo-200 bg-clip-text text-transparent mb-7 drop-shadow-[0_2px_16px_rgba(2,6,23,0.85)]">
               {lang === 'th' ? 'นักออกแบบกราฟิก' : 'Graphic Designer'}
             </h2>
 
@@ -72,7 +54,7 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, lang }) => {
 
               <button
                 onClick={onContactClick}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-slate-200 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 active:scale-95 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-slate-100 hover:text-white bg-[#070f1f]/70 hover:bg-[#0b162c]/85 backdrop-blur-sm border border-white/20 active:scale-95 transition-all shadow-md shadow-black/30"
               >
                 <Mail className="w-4 h-4 text-blue-400" />
                 <span>{lang === 'th' ? 'ติดต่อจ้างงาน' : 'Contact Me'}</span>
@@ -82,7 +64,7 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, lang }) => {
                 href={RESUME_DATA.pdfResumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-medium text-sm text-slate-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 active:scale-95 transition-all"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-medium text-sm text-slate-200 hover:text-white bg-[#070f1f]/70 hover:bg-[#0b162c]/85 backdrop-blur-sm border border-white/20 active:scale-95 transition-all shadow-md shadow-black/30"
               >
                 <FileDown className="w-4 h-4 text-cyan-400" />
                 <span>{lang === 'th' ? 'Resume PDF' : 'Download CV'}</span>

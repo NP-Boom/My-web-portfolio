@@ -23,30 +23,21 @@ export const ContactCta: React.FC<ContactCtaProps> = ({ lang }) => {
   };
 
   return (
-    <section id="contact" className="relative py-12 sm:py-16 overflow-hidden bg-[#050912]">
-      {/* Background - 3D Black Cubes Abstract Backdrop in Website Blue Tone */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <img
-          src="/assets/aistudio/black-cubes-background-abstract_b531b825.jpg"
-          alt="Abstract 3D black cubes backdrop"
-          className="w-full h-full object-cover object-[center_50%] opacity-55 scale-105"
-          style={{
-            filter: 'sepia(100%) hue-rotate(190deg) saturate(380%) brightness(0.8) contrast(1.2)',
-          }}
-        />
-        <div className="absolute inset-0 bg-[#060b14]/65 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#060b14] via-[#060b14]/75 to-[#060b14]" />
+    <section id="contact" className="relative py-12 sm:py-16 overflow-hidden bg-[#060b14]/45">
+      {/* Contrast scrims framing Contact CTA over global Manhattan skyline wallpaper */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div className="absolute inset-0 bg-gradient-to-t from-[#060b14] via-[#060b14]/25 to-[#060b14]/90" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Banner Title */}
-        <span className="text-xs font-bold uppercase tracking-widest text-blue-400 mb-1.5 block">
+        <span className="text-xs font-bold uppercase tracking-widest text-blue-300 mb-1.5 block drop-shadow-[0_2px_10px_rgba(2,6,23,0.9)]">
           {lang === 'th' ? 'ร่วมงานกับเรา' : 'COLLABORATION'}
         </span>
-        <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-3">
+        <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-3 drop-shadow-[0_3px_16px_rgba(2,6,23,0.9)]">
           {lang === 'th' ? "มาสร้างสรรค์ผลงานชั้นยอดไปด้วยกัน" : "Let's Work Together"}
         </h2>
-        <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto mb-6">
+        <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto mb-6 drop-shadow-[0_2px_12px_rgba(2,6,23,0.9)]">
           {lang === 'th'
             ? 'มีโปรเจกต์ที่ต้องการออกแบบ หรืออยากปรึกษาแนวทางงานดีไซน์ ติดต่อพูดคุยกันได้ตลอดเวลาครับ'
             : "Have a project in mind? I'd love to hear about it. Let's create something amazing together."}
@@ -74,7 +65,7 @@ export const ContactCta: React.FC<ContactCtaProps> = ({ lang }) => {
 
           <a
             href={`mailto:${RESUME_DATA.email}?subject=ติดต่อจ้างงานออกแบบกราฟิก - Narupon Boom`}
-            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-200 hover:text-white bg-white/10 hover:bg-white/15 border border-white/15 active:scale-95 transition-all"
+            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-100 hover:text-white bg-[#070f1f]/75 hover:bg-[#0b162c]/90 backdrop-blur-sm border border-white/20 active:scale-95 transition-all shadow-md shadow-black/30"
           >
             <Mail className="w-4 h-4 text-cyan-400" />
             <span>{RESUME_DATA.email}</span>
@@ -84,9 +75,9 @@ export const ContactCta: React.FC<ContactCtaProps> = ({ lang }) => {
             href={RESUME_DATA.pdfResumeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl text-sm font-medium text-slate-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl text-sm font-medium text-slate-200 hover:text-white bg-[#070f1f]/75 hover:bg-[#0b162c]/90 backdrop-blur-sm border border-white/20 transition-colors shadow-md shadow-black/30"
           >
-            <FileDown className="w-4 h-4 text-slate-400" />
+            <FileDown className="w-4 h-4 text-slate-300" />
             <span>Resume PDF</span>
           </a>
         </div>

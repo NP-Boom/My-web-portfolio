@@ -36,41 +36,41 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
   };
 
   return (
-    <section id="about" className="py-10 sm:py-14 relative bg-[#070d18]/90">
+    <section id="about" className="py-10 sm:py-14 relative bg-[#070d18]/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           {/* Left Column: Story & Highlights */}
           <div className="lg:col-span-7">
-            <span className="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2 block">
-              {lang === 'th' ? 'เกี่ยวกับตัวผม' : 'ABOUT ME'}
+            <span className="text-xs font-bold tracking-wide text-blue-400 mb-2 block">
+              About Me
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight text-balance mb-4">
               {lang === 'th'
-                ? 'ออกแบบสื่อกราฟิกที่ตอบโจทย์ ทรงพลัง และสร้างผลลัพธ์จริง'
-                : 'Designing Visuals That Make a Real Impact'}
+                ? 'ออกแบบสื่อกราฟิกที่ตอบโจทย์ความต้องการ และนำไปใช้งานได้จริง'
+                : 'Graphic Design That Meets Real Needs and Delivers Practical Results'}
             </h2>
 
             <div className="space-y-3 text-slate-300 text-sm sm:text-base leading-relaxed mb-5">
               <p>
                 {lang === 'th'
                   ? 'สวัสดีครับ ผมชื่อ '
-                  : "Hello! I am "}
+                  : 'Hello! I am '}
                 <strong className="text-white font-semibold">
                   {lang === 'th' ? `${RESUME_DATA.name} (ชื่อเล่น: บูม)` : `${RESUME_DATA.nameEn} (Boom)`}
                 </strong>
                 {lang === 'th'
-                  ? ' นักออกแบบกราฟิกผู้มีประสบการณ์การทำงานจริงในแวดวงสื่อออนไลน์และออฟไลน์มากกว่า 10 ปี'
-                  : ' a professional Graphic Designer with over 10 years of proven experience in both digital and print media.'}
+                  ? ' Graphic Design มีประสบการณ์การทำงาน ในสื่อออนไลน์และออฟไลน์มากกว่า 10 ปี'
+                  : ', a Graphic Designer with over 10 years of experience across both online and offline media.'}
               </p>
               <p>
                 {lang === 'th'
-                  ? 'ความเชี่ยวชาญหลักครอบคลุมงานหลากหลายประเภท ได้แก่ Poster โปสเตอร์, Brochure โบรชัวร์, Infographic, Facebook Ads, Banner แบนเนอร์, Leaflets แผ่นพับ และ Social Media Post ทุกรูปแบบ โดยทำงานให้กับองค์กรชั้นนำ อาทิ SCG, Sanwa และเพจชื่อดังระดับประเทศมากมาย'
-                  : 'My core expertise spans across Posters, Brochures, Infographics, Facebook Ads, Product Banners, Leaflets, and high-impact Social Media campaigns for renowned brands such as SCG, Sanwa, and prominent educational and corporate leaders.'}
+                  ? 'มีความสามารถในการออกแบบงานหลากหลายประเภท ได้แก่ Poster โปสเตอร์, Brochure โบรชัวร์, Infographic, Facebook Ads, Banner แบนเนอร์, Leaflets แผ่นพับ และ Social Media Post เป็นต้น'
+                  : 'Skilled in designing a wide range of visual materials, including Posters, Brochures, Infographics, Facebook Ads, Banners, Leaflets, and Social Media Posts.'}
               </p>
-              <p className="text-slate-400 text-xs sm:text-sm">
+              <p>
                 {lang === 'th'
-                  ? 'หัวใจสำคัญของการทำงานคือ การเข้าใจกลุ่มเป้าหมาย จัดวางองค์ประกอบอย่างลงตัว คัดสรร Typography ที่คมชัด และให้ความสำคัญกับความถูกต้องของไฟล์งานทั้งในจอและงานพิมพ์'
-                  : 'I believe great design bridges aesthetics with business results — catching attention, communicating value effortlessly, and driving customer action.'}
+                  ? 'โดยทำงานให้กับองค์กรชั้นนำ และเพจ Facebook ต่างๆ มากมาย หัวใจสำคัญของการทำงานคือ การเข้าใจกลุ่มเป้าหมาย จัดวางองค์ประกอบอย่างลงตัว'
+                  : 'Having worked with leading organizations and numerous Facebook pages, my core focus is understanding the target audience and crafting balanced, cohesive layouts.'}
               </p>
             </div>
 
