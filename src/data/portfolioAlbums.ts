@@ -1094,6 +1094,36 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
     "folderDriveUrl": "https://drive.google.com/drive/folders/1SX1Y0Jyo3biAkM3Cpf5UNMIvp2rRAQ4L?usp=sharing",
     "items": [
       {
+        "id": "poster-brochure-35",
+        "driveId": "",
+        "fileName": "magnific_mock-up_s7tUgP6l8e_2ba98191.png",
+        "image": "/assets/aistudio/magnific_mock-up_s7tUgP6l8e_2ba98191.png",
+        "cdnFallback": "/assets/aistudio/magnific_mock-up_s7tUgP6l8e_2ba98191.png",
+        "driveUrl": "",
+        "albumId": "poster-brochure",
+        "albumName": "Poster + Brochure"
+      },
+      {
+        "id": "poster-brochure-36",
+        "driveId": "",
+        "fileName": "magnific_mock-up_ovimtjZ829_f281a209.png",
+        "image": "/assets/aistudio/magnific_mock-up_ovimtjZ829_f281a209.png",
+        "cdnFallback": "/assets/aistudio/magnific_mock-up_ovimtjZ829_f281a209.png",
+        "driveUrl": "",
+        "albumId": "poster-brochure",
+        "albumName": "Poster + Brochure"
+      },
+      {
+        "id": "poster-brochure-37",
+        "driveId": "",
+        "fileName": "magnific_mock-up_gOh77IsSXO_6b910187.png",
+        "image": "/assets/aistudio/magnific_mock-up_gOh77IsSXO_6b910187.png",
+        "cdnFallback": "/assets/aistudio/magnific_mock-up_gOh77IsSXO_6b910187.png",
+        "driveUrl": "",
+        "albumId": "poster-brochure",
+        "albumName": "Poster + Brochure"
+      },
+      {
         "id": "poster-brochure-7",
         "driveId": "1533GmizKqx6wgnwDv3CQWRcb2Zutjl8G",
         "fileName": "1.23 (1).jpg",
@@ -1602,6 +1632,26 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
     "folderDriveUrl": "https://drive.google.com/drive/folders/1BPZzAd7xUFSJcrzkl5OwM9ztSyilHACt?usp=sharing",
     "items": [
       {
+        "id": "catalog-menu-14",
+        "driveId": "",
+        "fileName": "magnific_mock-up-proposal-book_EbWHWATuuO_d24b2849.png",
+        "image": "/assets/aistudio/magnific_mock-up-proposal-book_EbWHWATuuO_d24b2849.png",
+        "cdnFallback": "/assets/aistudio/magnific_mock-up-proposal-book_EbWHWATuuO_d24b2849.png",
+        "driveUrl": "",
+        "albumId": "catalog-menu",
+        "albumName": "Catalog : Menu"
+      },
+      {
+        "id": "catalog-menu-15",
+        "driveId": "",
+        "fileName": "magnific_mock-up-brochure_lJmwfWegv9_31b2bf44.png",
+        "image": "/assets/aistudio/magnific_mock-up-brochure_lJmwfWegv9_31b2bf44.png",
+        "cdnFallback": "/assets/aistudio/magnific_mock-up-brochure_lJmwfWegv9_31b2bf44.png",
+        "driveUrl": "",
+        "albumId": "catalog-menu",
+        "albumName": "Catalog : Menu"
+      },
+      {
         "id": "catalog-menu-1",
         "driveId": "1S-s3IRjcva9zHqA2nefdAGTE_90MUZ6T",
         "fileName": "11.jpg",
@@ -1745,6 +1795,26 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
     "badgeEn": "Signage",
     "folderDriveUrl": "https://drive.google.com/drive/folders/1onemgIGmpsE493PXYLGc9fJ10FB-KgOm?usp=sharing",
     "items": [
+      {
+        "id": "rollup-billboard-7",
+        "driveId": "",
+        "fileName": "magnific_mock-up-back-drop-299264-cm_8a3hRY9IrU_1d200d22.png",
+        "image": "/assets/aistudio/magnific_mock-up-back-drop-299264-cm_8a3hRY9IrU_1d200d22.png",
+        "cdnFallback": "/assets/aistudio/magnific_mock-up-back-drop-299264-cm_8a3hRY9IrU_1d200d22.png",
+        "driveUrl": "",
+        "albumId": "rollup-billboard",
+        "albumName": "Roll up / Vinyl / Billboard"
+      },
+      {
+        "id": "rollup-billboard-8",
+        "driveId": "",
+        "fileName": "magnific_mock-up-poster-2_IfRvWoUtvE_25458d59.png",
+        "image": "/assets/aistudio/magnific_mock-up-poster-2_IfRvWoUtvE_25458d59.png",
+        "cdnFallback": "/assets/aistudio/magnific_mock-up-poster-2_IfRvWoUtvE_25458d59.png",
+        "driveUrl": "",
+        "albumId": "rollup-billboard",
+        "albumName": "Roll up / Vinyl / Billboard"
+      },
       {
         "id": "rollup-billboard-1",
         "driveId": "1gwcTiwT0uZxYXkSVSE12Q20OERxKL29T",

@@ -31,25 +31,33 @@ test('ads-products album includes all 72 artworks in reversed Google Drive link 
   }
 });
 
-test('poster-brochure album starts from original item 7 onward followed by items 1 to 6', () => {
+test('poster-brochure album leads with the 3 newly added brochure mockups followed by items 7..34 and 1..6', () => {
   const posterAlbum = PORTFOLIO_ALBUMS.find((album) => album.id === 'poster-brochure');
   assert.ok(posterAlbum, 'poster-brochure album must exist');
-  assert.equal(posterAlbum.items.length, 34);
+  assert.equal(posterAlbum.items.length, 37);
 
   const uniqueIds = new Set(posterAlbum.items.map((item) => item.id));
-  assert.equal(uniqueIds.size, 34);
+  assert.equal(uniqueIds.size, 37);
 
-  // Items 7..34 appear first (indices 0..27)
-  assert.equal(posterAlbum.items[0].id, 'poster-brochure-7');
-  assert.equal(posterAlbum.items[0].fileName, '1.23 (1).jpg');
-  assert.equal(posterAlbum.items[1].id, 'poster-brochure-8');
-  assert.equal(posterAlbum.items[27].id, 'poster-brochure-34');
+  // 3 newly uploaded brochure mockups appear first (indices 0..2)
+  assert.equal(posterAlbum.items[0].id, 'poster-brochure-35');
+  assert.equal(posterAlbum.items[0].image, '/assets/aistudio/magnific_mock-up_s7tUgP6l8e_2ba98191.png');
+  assert.equal(posterAlbum.items[1].id, 'poster-brochure-36');
+  assert.equal(posterAlbum.items[1].image, '/assets/aistudio/magnific_mock-up_ovimtjZ829_f281a209.png');
+  assert.equal(posterAlbum.items[2].id, 'poster-brochure-37');
+  assert.equal(posterAlbum.items[2].image, '/assets/aistudio/magnific_mock-up_gOh77IsSXO_6b910187.png');
 
-  // Items 1..6 appear at the end (indices 28..33)
-  assert.equal(posterAlbum.items[28].id, 'poster-brochure-1');
-  assert.equal(posterAlbum.items[28].fileName, '1.5.jpg');
-  assert.equal(posterAlbum.items[33].id, 'poster-brochure-6');
-  assert.equal(posterAlbum.items[33].fileName, '1.21.jpg');
+  // Existing items 7..34 follow (indices 3..30)
+  assert.equal(posterAlbum.items[3].id, 'poster-brochure-7');
+  assert.equal(posterAlbum.items[3].fileName, '1.23 (1).jpg');
+  assert.equal(posterAlbum.items[4].id, 'poster-brochure-8');
+  assert.equal(posterAlbum.items[30].id, 'poster-brochure-34');
+
+  // Existing items 1..6 appear at the end (indices 31..36)
+  assert.equal(posterAlbum.items[31].id, 'poster-brochure-1');
+  assert.equal(posterAlbum.items[31].fileName, '1.5.jpg');
+  assert.equal(posterAlbum.items[36].id, 'poster-brochure-6');
+  assert.equal(posterAlbum.items[36].fileName, '1.21.jpg');
 
   // Verify every local asset exists on disk
   for (const item of posterAlbum.items) {
@@ -120,5 +128,67 @@ test('infographic album starts from original item 3 onward followed by items 1 t
     assert.ok(fs.existsSync(fullPath), `Missing local image file: ${relativePath}`);
     const stat = fs.statSync(fullPath);
     assert.ok(stat.size > 1000, `Image file too small/corrupt: ${relativePath}`);
+  }
+});
+
+test('catalog-menu album leads with the 2 newly added mockups followed by existing items 1..13', () => {
+  const catalogAlbum = PORTFOLIO_ALBUMS.find((album) => album.id === 'catalog-menu');
+  assert.ok(catalogAlbum, 'catalog-menu album must exist');
+  assert.equal(catalogAlbum.items.length, 15);
+
+  const uniqueIds = new Set(catalogAlbum.items.map((item) => item.id));
+  assert.equal(uniqueIds.size, 15);
+
+  // 2 newly uploaded mockups appear first (indices 0..1)
+  assert.equal(catalogAlbum.items[0].id, 'catalog-menu-14');
+  assert.equal(catalogAlbum.items[0].image, '/assets/aistudio/magnific_mock-up-proposal-book_EbWHWATuuO_d24b2849.png');
+  assert.equal(catalogAlbum.items[1].id, 'catalog-menu-15');
+  assert.equal(catalogAlbum.items[1].image, '/assets/aistudio/magnific_mock-up-brochure_lJmwfWegv9_31b2bf44.png');
+
+  // Existing items 1..13 follow (indices 2..14)
+  assert.equal(catalogAlbum.items[2].id, 'catalog-menu-1');
+  assert.equal(catalogAlbum.items[2].fileName, '11.jpg');
+  assert.equal(catalogAlbum.items[14].id, 'catalog-menu-13');
+
+  // Verify every local asset exists on disk
+  for (const item of catalogAlbum.items) {
+    const relativePath = item.image.replace(/^\//, '');
+    const fullPath = path.resolve(process.cwd(), 'public', relativePath);
+    assert.ok(fs.existsSync(fullPath), `Missing local image file: ${relativePath}`);
+    const stat = fs.statSync(fullPath);
+    assert.ok(stat.size > 1000, `Image file too small/corrupt: ${relativePath}`);
+  }
+});
+
+test('rollup-billboard album leads with the 2 newly added mockups followed by existing items 1..6', () => {
+  const rollupAlbum = PORTFOLIO_ALBUMS.find((album) => album.id === 'rollup-billboard');
+  assert.ok(rollupAlbum, 'rollup-billboard album must exist');
+  assert.equal(rollupAlbum.items.length, 8);
+
+  const uniqueIds = new Set(rollupAlbum.items.map((item) => item.id));
+  assert.equal(uniqueIds.size, 8);
+
+  // 2 newly uploaded mockups appear first (indices 0..1)
+  assert.equal(rollupAlbum.items[0].id, 'rollup-billboard-7');
+  assert.equal(rollupAlbum.items[0].image, '/assets/aistudio/magnific_mock-up-back-drop-299264-cm_8a3hRY9IrU_1d200d22.png');
+  assert.equal(rollupAlbum.items[1].id, 'rollup-billboard-8');
+  assert.equal(rollupAlbum.items[1].image, '/assets/aistudio/magnific_mock-up-poster-2_IfRvWoUtvE_25458d59.png');
+
+  // Existing items 1..6 follow (indices 2..7)
+  assert.equal(rollupAlbum.items[2].id, 'rollup-billboard-1');
+  assert.equal(rollupAlbum.items[2].fileName, '1.01.jpg');
+  assert.equal(rollupAlbum.items[7].id, 'rollup-billboard-6');
+
+  // Verify newly added local assets exist on disk and existing items have valid CDN fallbacks
+  for (const item of rollupAlbum.items) {
+    if (item.image.startsWith('/assets/aistudio/')) {
+      const relativePath = item.image.replace(/^\//, '');
+      const fullPath = path.resolve(process.cwd(), 'public', relativePath);
+      assert.ok(fs.existsSync(fullPath), `Missing local image file: ${relativePath}`);
+      const stat = fs.statSync(fullPath);
+      assert.ok(stat.size > 1000, `Image file too small/corrupt: ${relativePath}`);
+    } else {
+      assert.ok(item.cdnFallback.startsWith('https://'), `Expected valid cdnFallback for ${item.id}`);
+    }
   }
 });
