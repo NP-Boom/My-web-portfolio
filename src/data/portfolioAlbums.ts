@@ -800,7 +800,17 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/13AcHPGcVGuN6Z77PuK0jd6CSy6sriD3Q/view?usp=sharing",
         "albumId": "promotion",
         "albumName": "ภาพ Promotion"
-},
+      },
+      {
+        "id": "promotion-12",
+        "driveId": "",
+        "fileName": "IMG_3948_cb03f40e.jpeg",
+        "image": "/assets/aistudio/IMG_3948_cb03f40e.jpeg",
+        "cdnFallback": "/assets/aistudio/IMG_3948_cb03f40e.jpeg",
+        "driveUrl": "",
+        "albumId": "promotion",
+        "albumName": "ภาพ Promotion"
+      },
       {
         "id": "promotion-9",
         "driveId": "1-GSyW2ZqqFlDYvNeQt8TmCFpsxLDginK",
@@ -810,7 +820,7 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1-GSyW2ZqqFlDYvNeQt8TmCFpsxLDginK/view?usp=sharing",
         "albumId": "promotion",
         "albumName": "ภาพ Promotion"
-},
+      },
       {
         "id": "promotion-8",
         "driveId": "1mUhdVhRtV41VTxP8OgnEqwPbiypvLlgg",

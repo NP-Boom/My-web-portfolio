@@ -192,3 +192,33 @@ test('rollup-billboard album leads with the 2 newly added mockups followed by ex
     }
   }
 });
+
+test('promotion album places the new CapCut Secret banner at position 3 (index 2) among all 12 items', () => {
+  const promoAlbum = PORTFOLIO_ALBUMS.find((album) => album.id === 'promotion');
+  assert.ok(promoAlbum, 'promotion album must exist');
+  assert.equal(promoAlbum.items.length, 12);
+
+  const uniqueIds = new Set(promoAlbum.items.map((item) => item.id));
+  assert.equal(uniqueIds.size, 12);
+
+  // Position 1..2 remain existing top items
+  assert.equal(promoAlbum.items[0].id, 'promotion-11');
+  assert.equal(promoAlbum.items[1].id, 'promotion-10');
+
+  // Position 3 (index 2) is the newly uploaded CapCut Secret promotion banner
+  assert.equal(promoAlbum.items[2].id, 'promotion-12');
+  assert.equal(promoAlbum.items[2].image, '/assets/aistudio/IMG_3948_cb03f40e.jpeg');
+
+  // Position 4 onward continues existing order
+  assert.equal(promoAlbum.items[3].id, 'promotion-9');
+  assert.equal(promoAlbum.items[11].id, 'promotion-1');
+
+  // Verify every local asset exists on disk
+  for (const item of promoAlbum.items) {
+    const relativePath = item.image.replace(/^\//, '');
+    const fullPath = path.resolve(process.cwd(), 'public', relativePath);
+    assert.ok(fs.existsSync(fullPath), `Missing local image file: ${relativePath}`);
+    const stat = fs.statSync(fullPath);
+    assert.ok(stat.size > 1000, `Image file too small/corrupt: ${relativePath}`);
+  }
+});
