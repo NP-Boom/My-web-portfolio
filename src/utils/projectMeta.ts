@@ -116,6 +116,20 @@ const ALBUM_FALLBACK_VARIATIONS: Record<string, CustomItemMeta[]> = {
       descriptionEn: 'Dynamic bundle layout with clear promotional badges and standout pricing hierarchy.'
     }
   ],
+  'ads-fashion': [
+    {
+      titleTh: 'ภาพโฆษณาสินค้าแฟชันและคอลเลกชันกระเป๋า',
+      titleEn: 'Fashion & Handbag Collection Social Ad',
+      descriptionTh: 'ออกแบบสื่อโฆษณาแฟชันสไตล์ Editorial ชูภาพลักษณ์แบรนด์และคอลเลกชันใหม่อย่างหรูหรา',
+      descriptionEn: 'Editorial fashion social ad highlighting new handbag collections and seasonal promotions.'
+    },
+    {
+      titleTh: 'แบนเนอร์โปรโมชั่นสินค้าแฟชันและไลฟ์สด',
+      titleEn: 'Fashion Live & Seasonal Sale Campaign',
+      descriptionTh: 'จัดองค์ประกอบภาพนางแบบ สินค้า และพาดหัวโปรโมชั่นให้โดดเด่นน่าติดตาม',
+      descriptionEn: 'Balanced lookbook composition combining model photography, product focus, and sale offers.'
+    }
+  ],
   mutelu: [
     {
       titleTh: 'อาร์ตเวิร์กโฆษณาสายมูเตลูพรีเมียม',

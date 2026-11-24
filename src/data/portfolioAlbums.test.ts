@@ -100,26 +100,27 @@ test('leaflet-brochure album starts from original item 9 onward followed by item
   }
 });
 
-test('infographic album starts from original item 3 onward followed by items 1 to 2', () => {
+test('infographic album starts from item 5 onward followed by items 1 to 4 with all 30 local assets on disk', () => {
   const infoAlbum = PORTFOLIO_ALBUMS.find((album) => album.id === 'infographic');
   assert.ok(infoAlbum, 'infographic album must exist');
-  assert.equal(infoAlbum.items.length, 10);
+  assert.equal(infoAlbum.items.length, 30);
 
   const uniqueIds = new Set(infoAlbum.items.map((item) => item.id));
-  assert.equal(uniqueIds.size, 10);
+  assert.equal(uniqueIds.size, 30);
 
-  // Items 3..10 appear first (indices 0..7)
-  assert.equal(infoAlbum.items[0].id, 'infographic-3');
-  assert.equal(infoAlbum.items[0].fileName, '2.3.jpg');
-  assert.equal(infoAlbum.items[1].id, 'infographic-4');
-  assert.equal(infoAlbum.items[7].id, 'infographic-10');
-  assert.equal(infoAlbum.items[7].fileName, 'Safety Contact-01.jpg');
+  // Items 5..30 appear first (indices 0..25)
+  assert.equal(infoAlbum.items[0].id, 'infographic-5');
+  assert.equal(infoAlbum.items[0].fileName, '2.4.jpg');
+  assert.equal(infoAlbum.items[1].id, 'infographic-6');
+  assert.equal(infoAlbum.items[1].fileName, '2.5.jpg');
+  assert.equal(infoAlbum.items[25].id, 'infographic-30');
+  assert.equal(infoAlbum.items[25].fileName, 'SendTo.jpeg');
 
-  // Items 1..2 appear at the end (indices 8..9)
-  assert.equal(infoAlbum.items[8].id, 'infographic-1');
-  assert.equal(infoAlbum.items[8].fileName, '1.4.jpg');
-  assert.equal(infoAlbum.items[9].id, 'infographic-2');
-  assert.equal(infoAlbum.items[9].fileName, '2.2 Infographic 3 x Mock 1x3.jpg');
+  // Items 1..4 appear at the end (indices 26..29)
+  assert.equal(infoAlbum.items[26].id, 'infographic-1');
+  assert.equal(infoAlbum.items[26].fileName, '1.4.jpg');
+  assert.equal(infoAlbum.items[29].id, 'infographic-4');
+  assert.equal(infoAlbum.items[29].fileName, '2.3.jpg');
 
   // Verify every local asset exists on disk
   for (const item of infoAlbum.items) {
@@ -215,6 +216,39 @@ test('promotion album places the new CapCut Secret banner at position 3 (index 2
 
   // Verify every local asset exists on disk
   for (const item of promoAlbum.items) {
+    const relativePath = item.image.replace(/^\//, '');
+    const fullPath = path.resolve(process.cwd(), 'public', relativePath);
+    assert.ok(fs.existsSync(fullPath), `Missing local image file: ${relativePath}`);
+    const stat = fs.statSync(fullPath);
+    assert.ok(stat.size > 1000, `Image file too small/corrupt: ${relativePath}`);
+  }
+});
+
+test('ads-fashion album appears immediately after promotion with exact Thai title and all 4 artworks', () => {
+  const promoIndex = PORTFOLIO_ALBUMS.findIndex((album) => album.id === 'promotion');
+  const fashionIndex = PORTFOLIO_ALBUMS.findIndex((album) => album.id === 'ads-fashion');
+  assert.ok(promoIndex >= 0, 'promotion album must exist');
+  assert.equal(fashionIndex, promoIndex + 1, 'ads-fashion must immediately follow promotion');
+
+  const fashionAlbum = PORTFOLIO_ALBUMS[fashionIndex];
+  assert.equal(fashionAlbum.titleTh, 'ภาพ Ads สินค้าแฟชัน');
+  assert.equal(fashionAlbum.items.length, 4);
+
+  const expectedImages = [
+    '/assets/aistudio/SendTo_1_3d8c6c7f.jpeg',
+    '/assets/aistudio/SendTo2_cfbbbc9c.jpeg',
+    '/assets/aistudio/SendTo3_bf71bdf1.jpeg',
+    '/assets/aistudio/SendTo4_a237e78c.jpeg',
+  ];
+
+  const uniqueIds = new Set(fashionAlbum.items.map((item) => item.id));
+  assert.equal(uniqueIds.size, 4);
+  assert.deepEqual(
+    fashionAlbum.items.map((item) => item.image),
+    expectedImages,
+  );
+
+  for (const item of fashionAlbum.items) {
     const relativePath = item.image.replace(/^\//, '');
     const fullPath = path.resolve(process.cwd(), 'public', relativePath);
     assert.ok(fs.existsSync(fullPath), `Missing local image file: ${relativePath}`);

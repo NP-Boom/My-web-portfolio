@@ -900,7 +900,61 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
         "driveUrl": "https://drive.google.com/file/d/1FlvUWJLzUOEjNJXMIfMkFzRF2ZEDEY0N/view?usp=sharing",
         "albumId": "promotion",
         "albumName": "ภาพ Promotion"
-}
+      }
+    ]
+  },
+  {
+    "id": "ads-fashion",
+    "folderName": "ภาพ Ads สินค้าแฟชัน",
+    "folderId": "",
+    "titleTh": "ภาพ Ads สินค้าแฟชัน",
+    "titleEn": "Fashion & Bag Ads",
+    "subtitleTh": "งานออกแบบภาพโฆษณาสินค้าแฟชัน กระเป๋า และคอลเลกชันไลฟ์สไตล์ โดดเด่นหรูหราดึงดูดสายตา",
+    "subtitleEn": "Editorial fashion, handbag collections, and high-converting social campaign visuals.",
+    "badgeTh": "Fashion Ads",
+    "badgeEn": "Fashion",
+    "folderDriveUrl": "",
+    "items": [
+      {
+        "id": "ads-fashion-1",
+        "driveId": "",
+        "fileName": "SendTo_1_3d8c6c7f.jpeg",
+        "image": "/assets/aistudio/SendTo_1_3d8c6c7f.jpeg",
+        "cdnFallback": "/assets/aistudio/SendTo_1_3d8c6c7f.jpeg",
+        "driveUrl": "",
+        "albumId": "ads-fashion",
+        "albumName": "ภาพ Ads สินค้าแฟชัน"
+      },
+      {
+        "id": "ads-fashion-2",
+        "driveId": "",
+        "fileName": "SendTo2_cfbbbc9c.jpeg",
+        "image": "/assets/aistudio/SendTo2_cfbbbc9c.jpeg",
+        "cdnFallback": "/assets/aistudio/SendTo2_cfbbbc9c.jpeg",
+        "driveUrl": "",
+        "albumId": "ads-fashion",
+        "albumName": "ภาพ Ads สินค้าแฟชัน"
+      },
+      {
+        "id": "ads-fashion-3",
+        "driveId": "",
+        "fileName": "SendTo3_bf71bdf1.jpeg",
+        "image": "/assets/aistudio/SendTo3_bf71bdf1.jpeg",
+        "cdnFallback": "/assets/aistudio/SendTo3_bf71bdf1.jpeg",
+        "driveUrl": "",
+        "albumId": "ads-fashion",
+        "albumName": "ภาพ Ads สินค้าแฟชัน"
+      },
+      {
+        "id": "ads-fashion-4",
+        "driveId": "",
+        "fileName": "SendTo4_a237e78c.jpeg",
+        "image": "/assets/aistudio/SendTo4_a237e78c.jpeg",
+        "cdnFallback": "/assets/aistudio/SendTo4_a237e78c.jpeg",
+        "driveUrl": "",
+        "albumId": "ads-fashion",
+        "albumName": "ภาพ Ads สินค้าแฟชัน"
+      }
     ]
   },
   {
@@ -990,82 +1044,262 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
     "folderDriveUrl": "https://drive.google.com/drive/folders/1JKJuAgbT0MHaqFWOQrykKgSpmFd3E-W_?usp=sharing",
     "items": [
       {
-        "id": "infographic-3",
-        "driveId": "13X8-Mf71mtVnE-Z8Lb4I1RurpOjmRKw4",
-        "fileName": "2.3.jpg",
-        "image": "/portfolio_all/Infographic/03_2.3.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/13X8-Mf71mtVnE-Z8Lb4I1RurpOjmRKw4",
-        "driveUrl": "https://drive.google.com/file/d/13X8-Mf71mtVnE-Z8Lb4I1RurpOjmRKw4/view?usp=sharing",
-        "albumId": "infographic",
-        "albumName": "Infographic"
-      },
-      {
-        "id": "infographic-4",
+        "id": "infographic-5",
         "driveId": "1YFvjPed9qqmCgPDps13FTklElVoJlCop",
         "fileName": "2.4.jpg",
-        "image": "/portfolio_all/Infographic/04_2.4.jpg",
+        "image": "/portfolio_all/Infographic/05_2.4.jpg",
         "cdnFallback": "https://lh3.googleusercontent.com/d/1YFvjPed9qqmCgPDps13FTklElVoJlCop",
         "driveUrl": "https://drive.google.com/file/d/1YFvjPed9qqmCgPDps13FTklElVoJlCop/view?usp=sharing",
         "albumId": "infographic",
         "albumName": "Infographic"
       },
       {
-        "id": "infographic-5",
+        "id": "infographic-6",
         "driveId": "11WDf3C2NvyXJRHmZGPXqyy1rGSqDOVJR",
         "fileName": "2.5.jpg",
-        "image": "/portfolio_all/Infographic/05_2.5.jpg",
+        "image": "/portfolio_all/Infographic/06_2.5.jpg",
         "cdnFallback": "https://lh3.googleusercontent.com/d/11WDf3C2NvyXJRHmZGPXqyy1rGSqDOVJR",
         "driveUrl": "https://drive.google.com/file/d/11WDf3C2NvyXJRHmZGPXqyy1rGSqDOVJR/view?usp=sharing",
         "albumId": "infographic",
         "albumName": "Infographic"
       },
       {
-        "id": "infographic-6",
+        "id": "infographic-7",
+        "driveId": "1L_3m9cLNko4tiHHNMb0-g7iaeXpi2Gzq",
+        "fileName": "3.jpg",
+        "image": "/portfolio_all/Infographic/07_3.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1L_3m9cLNko4tiHHNMb0-g7iaeXpi2Gzq",
+        "driveUrl": "https://drive.google.com/file/d/1L_3m9cLNko4tiHHNMb0-g7iaeXpi2Gzq/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-8",
+        "driveId": "18ENIfWYzhZM7law1xX8gm_f-CryOgfpy",
+        "fileName": "12.jpg",
+        "image": "/portfolio_all/Infographic/08_12.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/18ENIfWYzhZM7law1xX8gm_f-CryOgfpy",
+        "driveUrl": "https://drive.google.com/file/d/18ENIfWYzhZM7law1xX8gm_f-CryOgfpy/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-9",
+        "driveId": "1iAtCXEU0a1sRhFQ2Ht7GDKdwr4uQJ1pk",
+        "fileName": "13.jpg",
+        "image": "/portfolio_all/Infographic/09_13.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1iAtCXEU0a1sRhFQ2Ht7GDKdwr4uQJ1pk",
+        "driveUrl": "https://drive.google.com/file/d/1iAtCXEU0a1sRhFQ2Ht7GDKdwr4uQJ1pk/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-10",
         "driveId": "1g9F6ISsWvOuwvMAYrg3RoDjNGhqf9vnX",
         "fileName": "14.jpg",
-        "image": "/portfolio_all/Infographic/06_14.jpg",
+        "image": "/portfolio_all/Infographic/10_14.jpg",
         "cdnFallback": "https://lh3.googleusercontent.com/d/1g9F6ISsWvOuwvMAYrg3RoDjNGhqf9vnX",
         "driveUrl": "https://drive.google.com/file/d/1g9F6ISsWvOuwvMAYrg3RoDjNGhqf9vnX/view?usp=sharing",
         "albumId": "infographic",
         "albumName": "Infographic"
       },
       {
-        "id": "infographic-7",
+        "id": "infographic-11",
         "driveId": "1GhVGFRyMAwoDCOJ8lRwvro2N6vWd4jYs",
         "fileName": "15.jpg",
-        "image": "/portfolio_all/Infographic/07_15.jpg",
+        "image": "/portfolio_all/Infographic/11_15.jpg",
         "cdnFallback": "https://lh3.googleusercontent.com/d/1GhVGFRyMAwoDCOJ8lRwvro2N6vWd4jYs",
         "driveUrl": "https://drive.google.com/file/d/1GhVGFRyMAwoDCOJ8lRwvro2N6vWd4jYs/view?usp=sharing",
         "albumId": "infographic",
         "albumName": "Infographic"
       },
       {
-        "id": "infographic-8",
+        "id": "infographic-12",
         "driveId": "171xZLOz37CRHhlR3Er-iFxFzYE6yOsj0",
         "fileName": "16.jpg",
-        "image": "/portfolio_all/Infographic/08_16.jpg",
+        "image": "/portfolio_all/Infographic/12_16.jpg",
         "cdnFallback": "https://lh3.googleusercontent.com/d/171xZLOz37CRHhlR3Er-iFxFzYE6yOsj0",
         "driveUrl": "https://drive.google.com/file/d/171xZLOz37CRHhlR3Er-iFxFzYE6yOsj0/view?usp=sharing",
         "albumId": "infographic",
         "albumName": "Infographic"
       },
       {
-        "id": "infographic-9",
+        "id": "infographic-13",
+        "driveId": "1rrPgM4yt5bFgheaheWPXEpK_9ARDjTS2",
+        "fileName": "21.jpg",
+        "image": "/portfolio_all/Infographic/13_21.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1rrPgM4yt5bFgheaheWPXEpK_9ARDjTS2",
+        "driveUrl": "https://drive.google.com/file/d/1rrPgM4yt5bFgheaheWPXEpK_9ARDjTS2/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-14",
+        "driveId": "1DBKE3txUyYmig-_qsm6qn-0zku9YHCmT",
+        "fileName": "22.jpg",
+        "image": "/portfolio_all/Infographic/14_22.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1DBKE3txUyYmig-_qsm6qn-0zku9YHCmT",
+        "driveUrl": "https://drive.google.com/file/d/1DBKE3txUyYmig-_qsm6qn-0zku9YHCmT/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-15",
+        "driveId": "1Ldc2xmseldDBuNVnw-Ckj2_WH209hyTz",
+        "fileName": "23.jpg",
+        "image": "/portfolio_all/Infographic/15_23.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1Ldc2xmseldDBuNVnw-Ckj2_WH209hyTz",
+        "driveUrl": "https://drive.google.com/file/d/1Ldc2xmseldDBuNVnw-Ckj2_WH209hyTz/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-16",
+        "driveId": "173ympXYOaf0g8LZOLV6EYyEv_SB5Xxiz",
+        "fileName": "24.jpg",
+        "image": "/portfolio_all/Infographic/16_24.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/173ympXYOaf0g8LZOLV6EYyEv_SB5Xxiz",
+        "driveUrl": "https://drive.google.com/file/d/173ympXYOaf0g8LZOLV6EYyEv_SB5Xxiz/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-17",
+        "driveId": "1gFmYYPurJY2y9yY7cvwSIYkMsaGEEI3t",
+        "fileName": "25.jpg",
+        "image": "/portfolio_all/Infographic/17_25.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1gFmYYPurJY2y9yY7cvwSIYkMsaGEEI3t",
+        "driveUrl": "https://drive.google.com/file/d/1gFmYYPurJY2y9yY7cvwSIYkMsaGEEI3t/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-18",
+        "driveId": "1tb1dun_8UrXkS-xYgdivbQSghHSnF5dz",
+        "fileName": "26.jpg",
+        "image": "/portfolio_all/Infographic/18_26.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1tb1dun_8UrXkS-xYgdivbQSghHSnF5dz",
+        "driveUrl": "https://drive.google.com/file/d/1tb1dun_8UrXkS-xYgdivbQSghHSnF5dz/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-19",
+        "driveId": "1q8BSNMSuBuu-QNley-a44EJJYg5XRdhh",
+        "fileName": "27.jpg",
+        "image": "/portfolio_all/Infographic/19_27.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1q8BSNMSuBuu-QNley-a44EJJYg5XRdhh",
+        "driveUrl": "https://drive.google.com/file/d/1q8BSNMSuBuu-QNley-a44EJJYg5XRdhh/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-20",
+        "driveId": "1U17rM7gQShPKRFOevpSF4ovb4unaibP-",
+        "fileName": "32.jpg",
+        "image": "/portfolio_all/Infographic/20_32.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1U17rM7gQShPKRFOevpSF4ovb4unaibP-",
+        "driveUrl": "https://drive.google.com/file/d/1U17rM7gQShPKRFOevpSF4ovb4unaibP-/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-21",
+        "driveId": "1IMarw8pX2AEbeTuF50vsHKP-6W_ASEs_",
+        "fileName": "35.jpg",
+        "image": "/portfolio_all/Infographic/21_35.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1IMarw8pX2AEbeTuF50vsHKP-6W_ASEs_",
+        "driveUrl": "https://drive.google.com/file/d/1IMarw8pX2AEbeTuF50vsHKP-6W_ASEs_/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-22",
+        "driveId": "1PXg6droPMvUBICVLY70dRk-ofcKsCr5m",
+        "fileName": "44. PSD Poster Branding Mockup For Designers Vol 1.jpg",
+        "image": "/portfolio_all/Infographic/22_44. PSD Poster Branding Mockup For Designers Vol 1.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1PXg6droPMvUBICVLY70dRk-ofcKsCr5m",
+        "driveUrl": "https://drive.google.com/file/d/1PXg6droPMvUBICVLY70dRk-ofcKsCr5m/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-23",
+        "driveId": "1P0805VU0Rkc7m1lXFcas9SBPNdl5b9SY",
+        "fileName": "52. โครงการเครื่องช่วยหายใจและเครื่องมือแพทย์พระราชทาน-01.jpg",
+        "image": "/portfolio_all/Infographic/23_52. โครงการเครื่องช่วยหายใจและเครื่องมือแพทย์พระราชทาน-01.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1P0805VU0Rkc7m1lXFcas9SBPNdl5b9SY",
+        "driveUrl": "https://drive.google.com/file/d/1P0805VU0Rkc7m1lXFcas9SBPNdl5b9SY/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-24",
         "driveId": "1_UdvTGUyzw3kPYZ0jsk2WUI9tWNqnHtQ",
         "fileName": "54. Isometric Tablet Mockup.jpg",
-        "image": "/portfolio_all/Infographic/09_54. Isometric Tablet Mockup.jpg",
+        "image": "/portfolio_all/Infographic/24_54. Isometric Tablet Mockup.jpg",
         "cdnFallback": "https://lh3.googleusercontent.com/d/1_UdvTGUyzw3kPYZ0jsk2WUI9tWNqnHtQ",
         "driveUrl": "https://drive.google.com/file/d/1_UdvTGUyzw3kPYZ0jsk2WUI9tWNqnHtQ/view?usp=sharing",
         "albumId": "infographic",
         "albumName": "Infographic"
       },
       {
-        "id": "infographic-10",
-        "driveId": "1tg2SAYznkjZWPzNOQ5hvECoHQivwbHe-",
-        "fileName": "Safety Contact-01.jpg",
-        "image": "/portfolio_all/Infographic/10_Safety Contact-01.jpg",
-        "cdnFallback": "https://lh3.googleusercontent.com/d/1tg2SAYznkjZWPzNOQ5hvECoHQivwbHe-",
-        "driveUrl": "https://drive.google.com/file/d/1tg2SAYznkjZWPzNOQ5hvECoHQivwbHe-/view?usp=sharing",
+        "id": "infographic-25",
+        "driveId": "1UvoQcTSKIxRmof5XutkwQHKHSoPuh44r",
+        "fileName": "55.jpg",
+        "image": "/portfolio_all/Infographic/25_55.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1UvoQcTSKIxRmof5XutkwQHKHSoPuh44r",
+        "driveUrl": "https://drive.google.com/file/d/1UvoQcTSKIxRmof5XutkwQHKHSoPuh44r/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-26",
+        "driveId": "1EiZ9CFcEZndfDFza4ha6OejZ_YQggRHh",
+        "fileName": "55.โปสเตอร์ อ.นก Size 2 x 2 เมตร.jpg",
+        "image": "/portfolio_all/Infographic/26_55.โปสเตอร์ อ.นก Size 2 x 2 เมตร.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1EiZ9CFcEZndfDFza4ha6OejZ_YQggRHh",
+        "driveUrl": "https://drive.google.com/file/d/1EiZ9CFcEZndfDFza4ha6OejZ_YQggRHh/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-27",
+        "driveId": "19Rz_eGk7TCkf9wRF4BeKzvawChdprXtq",
+        "fileName": "56.jpg",
+        "image": "/portfolio_all/Infographic/27_56.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/19Rz_eGk7TCkf9wRF4BeKzvawChdprXtq",
+        "driveUrl": "https://drive.google.com/file/d/19Rz_eGk7TCkf9wRF4BeKzvawChdprXtq/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-28",
+        "driveId": "1Rq6WyhMCRokDs87dSNjEvXR2Dd60ycvd",
+        "fileName": "JWD Timelines 2522-2561-01.jpg",
+        "image": "/portfolio_all/Infographic/28_JWD Timelines 2522-2561-01.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1Rq6WyhMCRokDs87dSNjEvXR2Dd60ycvd",
+        "driveUrl": "https://drive.google.com/file/d/1Rq6WyhMCRokDs87dSNjEvXR2Dd60ycvd/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-29",
+        "driveId": "19IzFF84EhQH2cXbzNJ-EDnLoEzEo00P1",
+        "fileName": "Office syndrome.jpg",
+        "image": "/portfolio_all/Infographic/29_Office syndrome.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/19IzFF84EhQH2cXbzNJ-EDnLoEzEo00P1",
+        "driveUrl": "https://drive.google.com/file/d/19IzFF84EhQH2cXbzNJ-EDnLoEzEo00P1/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-30",
+        "driveId": "1cGUF51zSy2YBJamaoIodrMr5WE1qtnZ-",
+        "fileName": "SendTo.jpeg",
+        "image": "/portfolio_all/Infographic/30_SendTo.jpeg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1cGUF51zSy2YBJamaoIodrMr5WE1qtnZ-",
+        "driveUrl": "https://drive.google.com/file/d/1cGUF51zSy2YBJamaoIodrMr5WE1qtnZ-/view?usp=sharing",
         "albumId": "infographic",
         "albumName": "Infographic"
       },
@@ -1081,11 +1315,31 @@ export const PORTFOLIO_ALBUMS: PortfolioAlbum[] = [
       },
       {
         "id": "infographic-2",
+        "driveId": "1JEco4YR5PKv_E-CPcNGhT-eHIRU-zuIP",
+        "fileName": "2.1 Infographic 3 x Mock 1x3.jpg",
+        "image": "/portfolio_all/Infographic/02_2.1 Infographic 3 x Mock 1x3.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/1JEco4YR5PKv_E-CPcNGhT-eHIRU-zuIP",
+        "driveUrl": "https://drive.google.com/file/d/1JEco4YR5PKv_E-CPcNGhT-eHIRU-zuIP/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-3",
         "driveId": "1do7p2RMlVlBDJSSIX-ABNQSTMdMHdJqU",
         "fileName": "2.2 Infographic 3 x Mock 1x3.jpg",
-        "image": "/portfolio_all/Infographic/02_2.2 Infographic 3 x Mock 1x3.jpg",
+        "image": "/portfolio_all/Infographic/03_2.2 Infographic 3 x Mock 1x3.jpg",
         "cdnFallback": "https://lh3.googleusercontent.com/d/1do7p2RMlVlBDJSSIX-ABNQSTMdMHdJqU",
         "driveUrl": "https://drive.google.com/file/d/1do7p2RMlVlBDJSSIX-ABNQSTMdMHdJqU/view?usp=sharing",
+        "albumId": "infographic",
+        "albumName": "Infographic"
+      },
+      {
+        "id": "infographic-4",
+        "driveId": "13X8-Mf71mtVnE-Z8Lb4I1RurpOjmRKw4",
+        "fileName": "2.3.jpg",
+        "image": "/portfolio_all/Infographic/04_2.3.jpg",
+        "cdnFallback": "https://lh3.googleusercontent.com/d/13X8-Mf71mtVnE-Z8Lb4I1RurpOjmRKw4",
+        "driveUrl": "https://drive.google.com/file/d/13X8-Mf71mtVnE-Z8Lb4I1RurpOjmRKw4/view?usp=sharing",
         "albumId": "infographic",
         "albumName": "Infographic"
       }

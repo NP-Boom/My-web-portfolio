@@ -14,7 +14,7 @@ export const PORTFOLIO_CATEGORIES: readonly PortfolioCategoryDefinition[] = [
     id: 'ads',
     labelTh: 'งานโฆษณา Ads',
     labelEn: 'Ads',
-    albumIds: ['ads-products', 'promotion', 'mutelu'],
+    albumIds: ['ads-products', 'promotion', 'ads-fashion', 'mutelu'],
   },
   {
     id: 'infographics',

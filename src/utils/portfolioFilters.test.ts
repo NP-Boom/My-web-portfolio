@@ -61,7 +61,7 @@ test('filterPortfolioAlbums returns accurate albums for each category and combin
   const ads = filterPortfolioAlbums(PORTFOLIO_ALBUMS, ['ads']);
   assert.deepEqual(
     ads.map((a) => a.id),
-    ['ads-products', 'promotion', 'mutelu'],
+    ['ads-products', 'promotion', 'ads-fashion', 'mutelu'],
   );
 
   const infographics = filterPortfolioAlbums(PORTFOLIO_ALBUMS, ['infographics']);
@@ -86,7 +86,7 @@ test('filterPortfolioAlbums returns accurate albums for each category and combin
   const combined = filterPortfolioAlbums(PORTFOLIO_ALBUMS, ['ads', 'infographics']);
   assert.deepEqual(
     combined.map((a) => a.id),
-    ['ads-products', 'promotion', 'mutelu', 'infographic'],
+    ['ads-products', 'promotion', 'ads-fashion', 'mutelu', 'infographic'],
   );
 });
 
