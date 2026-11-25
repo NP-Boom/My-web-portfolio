@@ -4,22 +4,36 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { PORTFOLIO_ALBUMS } from './portfolioAlbums';
 
-test('ads-products album includes all 72 artworks in reversed Google Drive link order (last image first)', () => {
+test('ads-products album keeps items 1..14 and replaces position 15 onward with the 7 newly uploaded collages', () => {
   const adsAlbum = PORTFOLIO_ALBUMS.find((album) => album.id === 'ads-products');
   assert.ok(adsAlbum, 'ads-products album must exist');
-  assert.equal(adsAlbum.items.length, 72);
+  assert.equal(adsAlbum.items.length, 21);
 
-  // Verify unique IDs and exact reversed order (72 down to 1)
+  // Verify unique IDs
   const uniqueIds = new Set(adsAlbum.items.map((item) => item.id));
-  assert.equal(uniqueIds.size, 72);
+  assert.equal(uniqueIds.size, 21);
+
+  // Items 1..14 (indices 0..13) remain unchanged
   assert.equal(adsAlbum.items[0].id, 'ads-products-72');
   assert.equal(adsAlbum.items[0].fileName, 'ผลงานออกแบบ_Page_12.jpg');
   assert.equal(adsAlbum.items[10].fileName, 'Screenshot 2567-07-10 at 12.41.16.png');
-  assert.equal(adsAlbum.items[21].fileName, '1762734754360.jpg');
-  assert.equal(adsAlbum.items[22].fileName, '1762306042483.jpg');
-  assert.equal(adsAlbum.items[64].fileName, '1734670539041.jpg');
-  assert.equal(adsAlbum.items[71].id, 'ads-products-1');
-  assert.equal(adsAlbum.items[71].fileName, '87273508_3060932234015033_9118441368723652608_n.jpeg');
+  assert.equal(adsAlbum.items[13].id, 'ads-products-59');
+  assert.equal(adsAlbum.items[13].fileName, 'IMG_8772.JPG');
+
+  // Items 15..21 (indices 14..20) are the 7 newly uploaded replacement images
+  const expectedNewImages = [
+    '/assets/aistudio/SendTo_b167352c.jpeg',
+    '/assets/aistudio/SendTo6_05dccc1f.jpeg',
+    '/assets/aistudio/SendTo3_d20b1828.jpeg',
+    '/assets/aistudio/SendTo5_b8e1ba92.jpeg',
+    '/assets/aistudio/SendTo4_2d493afc.jpeg',
+    '/assets/aistudio/SendTo2_688bf107.jpeg',
+    '/assets/aistudio/SendTo7_df91f9a9.jpeg',
+  ];
+  assert.deepEqual(
+    adsAlbum.items.slice(14).map((item) => item.image),
+    expectedNewImages,
+  );
 
   // Verify every local asset exists on disk and is non-empty
   for (const item of adsAlbum.items) {
