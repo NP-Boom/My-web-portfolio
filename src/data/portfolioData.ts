@@ -76,7 +76,7 @@ export const RESUME_DATA: ResumeData = {
   line: "0955893230",
   lineUrl: "https://line.me/ti/p/~0955893230",
   location: "นนทบุรี (ประเทศไทย)",
-  avatar: "/assets/aistudio/IMG_5537_78ab9459.JPG",
+  avatar: "/assets/aistudio/IMG_5537_navy_gold.jpg",
   logo: "/boom_design_logo.png",
   driveLink: "https://drive.google.com/drive/folders/1eDR7zgFiU6tJAfsyfba7_wyri3txmkdB?usp=sharing",
   pdfResumeUrl: "/assets/aistudio/Resume_Boom_2025_4246d4e9.pdf",

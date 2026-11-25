@@ -76,18 +76,18 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, lang }) => {
           <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
             <div className="relative w-72 sm:w-84 md:w-96 group">
               {/* Ambient Glows */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600/30 to-cyan-500/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all opacity-80" />
+              <div className="absolute -inset-4 bg-gradient-to-tr from-blue-700/35 via-indigo-600/20 to-amber-400/18 rounded-3xl blur-2xl group-hover:blur-3xl transition-all opacity-85" />
 
               {/* Main Card */}
-              <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-slate-800/80 to-slate-900/90 border border-white/10 p-3 shadow-2xl backdrop-blur-sm">
-                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#0a1222]">
+              <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#0b1730]/90 to-[#060d1d]/95 border border-blue-400/20 p-3 shadow-2xl backdrop-blur-sm">
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#060e20] ring-1 ring-amber-200/15">
                   <img
                     src={RESUME_DATA.avatar}
                     alt={RESUME_DATA.nameEn}
                     className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                   />
                   {/* Subtle bottom gradient on image */}
-                  <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#060b14] via-[#060b14]/50 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#040a18] via-[#040a18]/55 to-transparent" />
 
                   {/* Overlay Tag inside card */}
                   <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-white">
